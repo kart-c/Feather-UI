@@ -1,0 +1,23 @@
+body {
+	font-family: sans-serif;
+}
+
+.avatar {
+	border-radius: 100%;
+	object-fit: cover;
+}
+
+.avatar-lg {
+	height: 7rem;
+	width: 7rem;
+}
+
+.avatar-md {
+	height: 5rem;
+	width: 5rem;
+}
+
+.avatar-sm {
+	height: 3rem;
+	width: 3rem;
+}

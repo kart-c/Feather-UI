@@ -2,6 +2,7 @@
 	--status-online: #18e721;
 	--status-offline: #858685;
 	--status-dnd: #c32015;
+	--icon-badge: #e7181d;
 	--white: #fff;
 }
 
@@ -35,4 +36,25 @@ body {
 
 .badge-dnd {
 	background-color: var(--status-dnd);
+}
+
+.icon-lg {
+	height: 2rem;
+	font-size: 2rem;
+	width: 2rem;
+}
+
+.icon-badge {
+	background-color: var(--icon-badge);
+	border-radius: 50%;
+	color: var(--white);
+	display: inline-flex;
+	align-items: center;
+	font-size: 0.8rem;
+	height: 65%;
+	justify-content: center;
+	position: absolute;
+	right: -25%;
+	top: -25%;
+	width: 65%;
 }

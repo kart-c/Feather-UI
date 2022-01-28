@@ -1,0 +1,38 @@
+:root {
+	--status-online: #18e721;
+	--status-offline: #858685;
+	--status-dnd: #c32015;
+	--white: #fff;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+.badge-container {
+	display: inline-block;
+	position: relative;
+}
+
+.badge {
+	border-radius: 50%;
+	border: 3px solid var(--white);
+	bottom: 9%;
+	right: 9%;
+	display: inline-block;
+	position: absolute;
+	height: 12%;
+	width: 12%;
+}
+
+.badge-online {
+	background-color: var(--status-online);
+}
+
+.badge-offline {
+	background-color: var(--status-offline);
+}
+
+.badge-dnd {
+	background-color: var(--status-dnd);
+}

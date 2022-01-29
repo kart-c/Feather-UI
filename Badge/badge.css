@@ -1,0 +1,60 @@
+:root {
+	--status-online: #18e721;
+	--status-offline: #858685;
+	--status-dnd: #c32015;
+	--icon-badge: #e7181d;
+	--white: #fff;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+.badge-container {
+	display: inline-block;
+	position: relative;
+}
+
+.badge {
+	border-radius: 50%;
+	border: 3px solid var(--white);
+	bottom: 9%;
+	right: 9%;
+	display: inline-block;
+	position: absolute;
+	height: 12%;
+	width: 12%;
+}
+
+.badge-online {
+	background-color: var(--status-online);
+}
+
+.badge-offline {
+	background-color: var(--status-offline);
+}
+
+.badge-dnd {
+	background-color: var(--status-dnd);
+}
+
+.icon-lg {
+	height: 2rem;
+	font-size: 2rem;
+	width: 2rem;
+}
+
+.icon-badge {
+	background-color: var(--icon-badge);
+	border-radius: 50%;
+	color: var(--white);
+	display: inline-flex;
+	align-items: center;
+	font-size: 0.8rem;
+	height: 65%;
+	justify-content: center;
+	position: absolute;
+	right: -25%;
+	top: -25%;
+	width: 65%;
+}

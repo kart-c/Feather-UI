@@ -1,0 +1,67 @@
+@import '../_variables.css';
+@import '../_reset.css';
+
+.alert {
+	align-items: center;
+	box-sizing: border-box;
+	border-radius: 0.5rem;
+	color: #fff;
+	display: flex;
+	font-size: var(--text-md);
+	padding: 1rem 2rem;
+	max-width: 40rem;
+}
+
+.theme-icon {
+	margin-right: 2rem;
+}
+
+.danger {
+	background-color: var(--danger-color);
+}
+
+.warning {
+	background-color: var(--warning-color);
+}
+
+.success {
+	background-color: var(--success-color);
+}
+
+.info {
+	background-color: var(--info-color);
+}
+
+.outline-danger {
+	border: 2px solid var(--danger-color);
+	color: var(--danger-color);
+}
+
+.outline-warning {
+	border: 2px solid var(--warning-color);
+	color: var(--warning-color);
+}
+
+.outline-success {
+	border: 2px solid var(--success-color);
+	color: var(--success-color);
+}
+
+.outline-info {
+	border: 2px solid var(--info-color);
+	color: var(--info-color);
+}
+
+.alert-cancel {
+	justify-content: space-between;
+}
+
+.alert-cancel > div {
+	display: flex;
+	align-items: center;
+}
+
+.cancel-btn {
+	cursor: pointer;
+	margin: 0;
+}

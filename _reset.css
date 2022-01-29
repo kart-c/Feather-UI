@@ -9,3 +9,9 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 }
+
+button {
+	border: 0;
+	background-color: #fff;
+	cursor: pointer;
+}

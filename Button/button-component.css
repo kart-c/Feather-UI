@@ -1,0 +1,51 @@
+@import '../_variables.css';
+@import '../_reset.css';
+
+.btn {
+	color: var(--lynx-white);
+	font-size: var(--text-md);
+	padding: 1rem 2rem;
+}
+
+.btn-primary {
+	background-color: var(--primary-color);
+}
+
+.btn-secondary {
+	background-color: var(--secondary-color);
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+	opacity: 0.9;
+}
+
+.btn-primary:active,
+.btn-secondary:active {
+	opacity: 0.7;
+}
+
+.btn-disabled {
+	background-color: var(--grey);
+	cursor: not-allowed;
+}
+
+.btn.outline-primary {
+	border: 2px solid var(--primary-color);
+	color: var(--primary-color);
+}
+
+.btn.outline-secondary {
+	border: 2px solid var(--secondary-color);
+	color: var(--secondary-color);
+}
+
+.btn.outline-disabled {
+	border: 2px solid var(--grey);
+	color: var(--grey);
+	cursor: not-allowed;
+}
+
+.btn-round {
+	border-radius: 1rem;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://kit.fontawesome.com/bbbaa28fd5.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="card.css" />
+		<title>Card</title>
+		<style>
+			section {
+				align-items: center;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+
+			section > div {
+				margin: 2rem 0;
+			}
+			section > div:first-of-type {
+				margin-top: 10rem;
+			}
+			section > div:last-of-type {
+				margin-bottom: 20rem;
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<div class="card">
+				<div class="content">
+					<h3>Card title</h3>
+					<h4>Card subtitle</h4>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dignissimos libero.
+					</p>
+					<a href="#" class="action-link">Action Link 1</a>
+					<a href="#" class="action-link">Action Link 2</a>
+				</div>
+			</div>
+			<div class="card">
+				<img src="../Assets/card-image.jpg" alt="basic-card image" class="card-img" />
+				<div class="content">
+					<h3>Card title</h3>
+					<h4>Card subtitle</h4>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dignissimos libero.
+					</p>
+					<a href="#" class="action-link">Action Link 1</a>
+					<a href="#" class="action-link">Action Link 2</a>
+				</div>
+			</div>
+			<div class="card overlay">
+				<img src="../Assets/card-image.jpg" alt="overlay-card image" class="card-img" />
+				<div class="content">
+					<h3>Card title</h3>
+					<h4>Card subtitle</h4>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dignissimos libero.
+					</p>
+					<a href="#" class="action-link">Action Link 1</a>
+					<a href="#" class="action-link">Action Link 2</a>
+				</div>
+			</div>
+			<div class="card">
+				<img src="../Assets/card-image.jpg" alt="card with badge" class="card-img" />
+				<div class="content">
+					<h3>Card title</h3>
+					<h4>Card subtitle</h4>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dignissimos libero.
+					</p>
+					<a href="#" class="action-link">Action Link 1</a>
+					<a href="#" class="action-link">Action Link 2</a>
+					<span class="card-badge"><strong>Recommended</strong></span>
+				</div>
+			</div>
+			<div class="card">
+				<img src="../Assets/card-image.jpg" alt="card with icon" class="card-img" />
+				<div class="content">
+					<h3>Card title</h3>
+					<h4>Card subtitle</h4>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dignissimos libero.
+					</p>
+					<i class="far fa-heart overlay-icon"></i>
+					<div class="card-btn__container">
+						<a href="#" class="action-link">Action Link 1</a>
+						<div class="icon-container">
+							<i class="far fa-bookmark"></i>
+							<i class="fas fa-share-alt"></i>
+							<i class="fas fa-ellipsis-v"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

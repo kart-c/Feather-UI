@@ -1,0 +1,109 @@
+@import '../_variables.css';
+@import '../_reset.css';
+
+.card {
+	border-radius: 1rem;
+	box-shadow: 2px 2px 10px var(--lynx-white);
+	overflow: hidden;
+	position: relative;
+	transition: box-shadow 0.2s ease-in;
+	width: 32rem;
+}
+
+.card:hover {
+	box-shadow: 2px 2px 10px var(--lynx-grey);
+}
+
+.card h4 {
+	font-weight: 400;
+	color: var(--black);
+	margin: 0.8rem 0;
+}
+
+.card-img {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+}
+
+.content {
+	padding: 1.6rem;
+}
+
+.content p {
+	border-bottom: 1px solid var(--lynx-grey);
+	padding-bottom: 1rem;
+}
+
+.action-link {
+	background-color: var(--info-color);
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.4rem;
+	margin: 1.6rem 1.6rem 0 0;
+	padding: 0.8rem 1.6rem;
+}
+
+.action-link:hover {
+	opacity: 0.9;
+}
+
+.action-link:active {
+	opacity: 0.7;
+}
+
+.overlay .card-img {
+	height: 25rem;
+}
+
+.overlay h3,
+.overlay h4 {
+	color: var(--lynx-white);
+	position: absolute;
+}
+
+.overlay h3 {
+	top: 18rem;
+}
+
+.overlay h4 {
+	top: 21rem;
+}
+
+.overlay-icon {
+	color: var(--lynx-white);
+	cursor: pointer;
+	font-size: var(--text-lg);
+	position: absolute;
+	right: 5%;
+	top: 5%;
+}
+
+.card-badge {
+	background-color: var(--primary-color);
+	color: var(--lynx-white);
+	font-size: 1.2rem;
+	padding: 0.8rem 4rem;
+	position: absolute;
+	right: -10%;
+	top: 3%;
+	transform: rotateZ(45deg) translate(1.7rem);
+}
+
+.card-btn__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.icon-container {
+	cursor: pointer;
+	padding-top: 1.6rem;
+}
+
+.icon-container > i {
+	font-size: var(--text-md);
+	margin: 0 1.6rem;
+}

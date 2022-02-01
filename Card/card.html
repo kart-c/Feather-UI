@@ -28,7 +28,7 @@
 	</head>
 	<body>
 		<section>
-			<div class="card">
+			<div class="card text-only">
 				<div class="content">
 					<h3>Card title</h3>
 					<h4>Card subtitle</h4>
@@ -51,7 +51,7 @@
 					<a href="#" class="action-link">Action Link 2</a>
 				</div>
 			</div>
-			<div class="card overlay">
+			<div class="card overlay card-shadow">
 				<img src="../Assets/card-image.jpg" alt="overlay-card image" class="card-img" />
 				<div class="content">
 					<h3>Card title</h3>
@@ -93,6 +93,45 @@
 							<i class="fas fa-ellipsis-v"></i>
 						</div>
 					</div>
+				</div>
+			</div>
+			<div class="card product-card">
+				<img src="../Assets/card-image-2.jpg" alt="card with icon" class="card-img" />
+				<div class="content">
+					<h3>Product title</h3>
+					<h4>Product category</h4>
+					<i class="far fa-heart overlay-icon"></i>
+					<span class="product-card-badge"><strong>New</strong></span>
+					<div class="img-scroll">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<p>
+						<strong>Rs. 1799</strong> <small><s>Rs. 2999</s></small>
+						<small class="card-discount">(60% OFF)</small>
+					</p>
+					<a href="#" class="action-link">Add to Cart</a>
+				</div>
+			</div>
+			<div class="card horizontal-card">
+				<img src="../Assets/card-image-2.jpg" alt="card with icon" class="card-img" />
+				<div class="content">
+					<h3>Product title</h3>
+					<h4>Product category</h4>
+					<div class="buy-info">
+						<p>
+							<strong>Rs. 1799</strong> <small><s>Rs. 2999</s></small>
+							<small class="card-discount">(60% OFF)</small>
+						</p>
+						<select name="product-count" id="product-count">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+						</select>
+					</div>
+					<a href="#" class="action-link">Buy Now</a>
+					<button class="action-link remove-btn">Remove</button>
 				</div>
 			</div>
 		</section>

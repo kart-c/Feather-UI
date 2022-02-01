@@ -1,0 +1,309 @@
+@import '../_variables.css';
+@import '../_reset.css';
+
+.card {
+	border-radius: 1rem;
+	overflow: hidden;
+	position: relative;
+	width: 32rem;
+}
+
+.text-only .content {
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+	border-top: 1px solid var(--black);
+}
+
+.card h4 {
+	font-weight: 400;
+	color: var(--black);
+	margin: 0.8rem 0;
+}
+
+/* || apply only if user wants shadow */
+.card-shadow {
+	box-shadow: 2px 2px 10px var(--lynx-white);
+	transition: box-shadow 0.2s ease-in;
+}
+
+.card-shadow:hover {
+	box-shadow: 2px 2px 10px var(--lynx-grey);
+}
+
+.card-shadow .content {
+	border: 0;
+}
+
+.card-img {
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+	display: block;
+	object-fit: cover;
+	width: 100%;
+}
+
+.content {
+	border-bottom-left-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+	border-bottom: 1px solid var(--black);
+	border-left: 1px solid var(--black);
+	border-right: 1px solid var(--black);
+	padding: 1.6rem;
+}
+
+.content p {
+	border-bottom: 1px solid var(--lynx-grey);
+	padding-bottom: 1rem;
+}
+
+.action-link {
+	background-color: var(--info-color);
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.4rem;
+	line-height: 2.2rem;
+	margin: 1.6rem 1.6rem 0 0;
+	padding: 0.8rem 1.6rem;
+}
+
+.action-link:hover {
+	opacity: 0.9;
+}
+
+.action-link:active {
+	opacity: 0.7;
+}
+
+.overlay .card-img {
+	height: 25rem;
+}
+
+.overlay h3,
+.overlay h4 {
+	color: var(--lynx-white);
+	position: absolute;
+}
+
+.overlay h3 {
+	top: 18rem;
+}
+
+.overlay h4 {
+	top: 21rem;
+}
+
+.overlay-icon {
+	color: var(--lynx-white);
+	cursor: pointer;
+	font-size: var(--text-lg);
+	position: absolute;
+	right: 5%;
+	top: 5%;
+}
+
+.card-badge {
+	background-color: var(--primary-color);
+	color: var(--lynx-white);
+	font-size: 1.2rem;
+	padding: 0.8rem 4rem;
+	position: absolute;
+	right: -10%;
+	top: 3%;
+	transform: rotateZ(45deg) translate(1.7rem);
+}
+
+.card-btn__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.icon-container {
+	cursor: pointer;
+	padding-top: 1.6rem;
+}
+
+.icon-container > i {
+	font-size: var(--text-md);
+	margin: 0 1.6rem;
+}
+
+/* || product card style */
+
+.product-card {
+	overflow: visible;
+}
+
+.product-card .card-img {
+	height: 35rem;
+}
+
+.product-card-badge {
+	background-color: var(--danger-color);
+	color: #fff;
+	font-size: 1.2rem;
+	left: -5%;
+	padding: 0.8em 2.4rem;
+	position: absolute;
+	top: 3%;
+}
+
+.product-card-badge::before {
+	background-color: var(--danger-color);
+	bottom: -22%;
+	content: '';
+	height: 2.5rem;
+	position: absolute;
+	left: 7%;
+	transform: rotateZ(30deg);
+	width: 2.5rem;
+	z-index: -1;
+}
+
+.card-discount {
+	color: var(--danger-color);
+}
+
+.product-card .action-link {
+	background-color: var(--primary-color);
+	box-sizing: border-box;
+	text-align: center;
+	width: 100%;
+}
+
+.product-card .overlay-icon {
+	top: 4%;
+}
+
+.img-scroll {
+	position: absolute;
+	left: 35%;
+	top: 60%;
+}
+
+.img-scroll span {
+	border: 2px solid var(--black);
+	border-radius: 50%;
+	cursor: pointer;
+	display: inline-block;
+	height: 1rem;
+	margin: 0 0.8rem;
+	width: 1rem;
+}
+
+.img-scroll span:first-of-type {
+	background-color: var(--black);
+}
+
+/* || horizontal card style */
+
+.horizontal-card {
+	display: flex;
+	height: 15rem;
+	width: 70rem;
+}
+
+.horizontal-card .card-img {
+	border-top-right-radius: 0;
+	width: 20%;
+}
+
+.horizontal-card .content {
+	border-bottom-left-radius: 0;
+	border-left: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 1rem;
+	border-top: 1px solid var(--black);
+	display: grid;
+	flex-grow: 2;
+	grid-template-columns: 2fr 1.3fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	padding: 0.8rem;
+}
+
+.horizontal-card h4 {
+	align-self: start;
+	grid-row: 2/3;
+	margin: 0;
+}
+
+.horizontal-card .action-link {
+	align-self: center;
+	background-color: var(--primary-color);
+	grid-column: 2/3;
+	grid-row: 1/2;
+	justify-self: center;
+	margin: 0.8rem 1.6rem;
+	text-align: center;
+	width: 60%;
+}
+
+.horizontal-card .remove-btn {
+	background-color: var(--lynx-grey);
+	box-sizing: content-box;
+	grid-column: 2/3;
+	grid-row: 3/4;
+}
+
+.buy-info {
+	align-items: center;
+	display: flex;
+	grid-column: 1/2;
+	grid-row: 3/4;
+}
+
+.horizontal-card p {
+	grid-column: 1/2;
+	margin-left: 1.6rem;
+}
+
+#product-count {
+	height: 2rem;
+	margin-left: 2rem;
+	text-align: center;
+	width: 5rem;
+}
+
+/* || responsive style for horizontal card */
+
+@media only screen and (max-width: 720px) {
+	.horizontal-card {
+		flex-direction: column;
+		height: auto;
+		width: 32rem;
+	}
+
+	.horizontal-card .card-img {
+		width: 100%;
+		height: 25rem;
+	}
+
+	.horizontal-card .content {
+		border-bottom-left-radius: 1rem;
+		border-left: 1px solid var(--black);
+		border-top: 0;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.horizontal-card p {
+		border: 0;
+	}
+
+	.horizontal-card h3,
+	.horizontal-card h4,
+	.horizontal-card .buy-info {
+		grid-column: 1/3;
+	}
+
+	.horizontal-card .action-link {
+		grid-row: 4/5;
+		grid-column: 2/3;
+	}
+
+	.horizontal-card .remove-btn {
+		grid-column: 1/2;
+	}
+}

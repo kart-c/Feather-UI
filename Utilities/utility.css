@@ -1,0 +1,14 @@
+@import '../_variables.css';
+@import '../_reset.css';
+
+.grey-text {
+	color: var(--grey);
+}
+
+.align-center {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}

@@ -7,18 +7,46 @@
 		<script src="https://kit.fontawesome.com/bbbaa28fd5.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="navigation.css" />
 		<title>Navigation</title>
-		<style></style>
+		<style>
+			header:last-of-type {
+				margin: 10rem 0;
+			}
+		</style>
 	</head>
 	<body>
 		<header class="header black-bg">
 			<h2>Navbar</h2>
-			<input type="search" name="search" id="header-search" />
+			<input type="search" name="search" class="header-search" placeholder="Search..." />
+			<i class="fas fa-bars hamburger-menu"></i>
 			<nav class="nav">
 				<ul class="nav-list">
 					<li><a href="#">Home</a></li>
 					<li><a href="#">About</a></li>
 					<li><a href="#">Products</a></li>
 					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</nav>
+		</header>
+		<header class="header black-bg">
+			<h2>Navbar</h2>
+			<ul class="nav-list pd-list">
+				<li><a href="">Product</a></li>
+				<li><a href="">Product</a></li>
+				<li><a href="">Product</a></li>
+			</ul>
+			<input type="search" name="search" class="header-search sm-input" placeholder="Search..." />
+			<i class="fas fa-bars hamburger-menu"></i>
+			<nav class="nav">
+				<ul class="nav-list">
+					<li>
+						<a href="#"><i class="fas fa-user"></i> Profile</a>
+					</li>
+					<li>
+						<a href="#"><i class="fas fa-heart"></i> Wishlist</a>
+					</li>
+					<li>
+						<a href="#"><i class="fas fa-shopping-bag"></i> Bag</a>
+					</li>
 				</ul>
 			</nav>
 		</header>

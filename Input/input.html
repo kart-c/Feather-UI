@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://kit.fontawesome.com/bbbaa28fd5.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="input.css" />
+		<title>Input</title>
+		<style>
+			div {
+				margin: 5rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="input-container">
+			<label for="username">Username *</label>
+			<input type="text" id="username" name="username" placeholder="Enter your username" />
+		</div>
+		<div class="input-container error">
+			<label for="password">Password *</label>
+			<input type="text" id="password" name="password" placeholder="Enter your password" />
+			<small>* Wrong Password. Please try again</small>
+		</div>
+		<div class="input-container valid">
+			<label for="valid-password">Password *</label>
+			<input type="text" id="valid-password" name="username" placeholder="Enter your password" />
+			<small>* Password Verified</small>
+		</div>
+		<div class="input-container inline-input">
+			<label for="username-inline">Username *</label>
+			<input type="text" id="username-inline" name="username" placeholder="Enter your username" />
+		</div>
+		<div class="input-container inline-input">
+			<label for="password-inline">Password *</label>
+			<input type="text" id="password-inline" name="username" placeholder="Enter your password" />
+		</div>
+		<div class="radio-container">
+			<input type="radio" name="example input" id="radio-input-1" />
+			<label for="radio-input-1">Radio Input 1</label>
+		</div>
+		<div class="radio-container">
+			<input type="radio" name="example input" id="radio-input-2" />
+			<label for="radio-input-2">Radio Input 2</label>
+		</div>
+		<div class="radio-container">
+			<input type="radio" name="example input" id="radio-input-3" />
+			<label for="radio-input-3">Radio Input 3</label>
+		</div>
+		<div class="radio-container disabled">
+			<input type="radio" name="disabled example input" id="radio-input-4" disabled />
+			<label for="radio-input-4">Disabled radio input</label>
+		</div>
+		<div class="checkbox-container">
+			<input type="checkbox" name="disabled example input" id="checkbox-1" />
+			<label for="checkbox-1">Checkbox input</label>
+		</div>
+		<div class="checkbox-container disabled">
+			<input type="checkbox" name="disabled example input" id="checkbox-1" disabled />
+			<label for="checkbox-1">Checkbox input</label>
+		</div>
+	</body>
+</html>

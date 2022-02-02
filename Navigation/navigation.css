@@ -1,0 +1,40 @@
+@import '../_variables.css';
+@import '../_reset.css';
+
+.header {
+	align-items: center;
+	box-sizing: border-box;
+	color: #fff;
+	display: flex;
+	padding: 1.6rem;
+	width: 100%;
+}
+
+.nav {
+	align-items: center;
+	display: flex;
+	font-size: var(--text-md);
+	margin-left: auto;
+}
+
+#header-search {
+	border: 0;
+	border-radius: 1.6rem;
+	font-size: var(--text-md);
+	margin-left: auto;
+	outline: 0;
+	padding: 0.8rem;
+	width: 35%;
+}
+
+.nav-list {
+	align-items: center;
+	display: flex;
+	list-style: none;
+}
+
+.nav-list a {
+	color: inherit;
+	margin: 0 1.6rem;
+	white-space: nowrap;
+}

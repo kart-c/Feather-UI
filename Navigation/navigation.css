@@ -75,6 +75,7 @@
 	}
 
 	.hamburger-menu {
+		cursor: pointer;
 		display: block;
 		margin-left: auto;
 		justify-self: flex-end;

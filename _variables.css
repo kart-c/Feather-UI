@@ -33,3 +33,87 @@
 	--grey: #9a9a9a;
 	--black: #282828;
 }
+
+/* || Some default color classes */
+
+.primary-clr {
+	color: var(--primary-color);
+}
+
+.secondary-clr {
+	color: var(--secondary-color);
+}
+
+.danger-clr {
+	color: var(--danger-color);
+}
+
+.warning-clr {
+	color: var(--warning-color);
+}
+
+.info-clr {
+	color: var(--info-color);
+}
+
+.success-clr {
+	color: var(--success-color);
+}
+
+.lynx-white-clr {
+	color: var(--lynx-white);
+}
+
+.lynx-grey-clr {
+	color: var(--lynx-grey);
+}
+
+.grey-clr {
+	color: var(--grey);
+}
+
+.black-clr {
+	color: var(--black);
+}
+
+/* || Default background color classes */
+
+.primary-bg {
+	background-color: var(--primary-color);
+}
+
+.secondary-bg {
+	background-color: var(--secondary-color);
+}
+
+.danger-bg {
+	background-color: var(--danger-color);
+}
+
+.warning-bg {
+	background-color: var(--warning-color);
+}
+
+.info-bg {
+	background-color: var(--info-color);
+}
+
+.success-bg {
+	background-color: var(--success-color);
+}
+
+.lynx-white-bg {
+	background-color: var(--lynx-white);
+}
+
+.lynx-grey-bg {
+	background-color: var(--lynx-grey);
+}
+
+.grey-bg {
+	background-color: var(--grey);
+}
+
+.black-bg {
+	background-color: var(--black);
+}

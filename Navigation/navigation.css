@@ -13,23 +13,29 @@
 .nav {
 	align-items: center;
 	display: flex;
-	font-size: var(--text-md);
 	margin-left: auto;
 }
 
-#header-search {
+.header-search {
 	border: 0;
 	border-radius: 1.6rem;
 	font-size: var(--text-md);
 	margin-left: auto;
 	outline: 0;
 	padding: 0.8rem;
+	min-width: 18rem;
 	width: 35%;
+}
+
+.hamburger-menu {
+	display: none;
+	font-size: var(--text-lg);
 }
 
 .nav-list {
 	align-items: center;
 	display: flex;
+	font-size: var(--text-md);
 	list-style: none;
 }
 
@@ -37,4 +43,46 @@
 	color: inherit;
 	margin: 0 1.6rem;
 	white-space: nowrap;
+}
+
+.header .small-input {
+	width: 25rem;
+}
+
+.sm-input {
+	width: 20%;
+}
+
+.pd-list {
+	margin-left: 1.6rem;
+}
+
+/* || responsive design */
+
+@media only screen and (max-width: 900px) {
+	.pd-list {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.nav {
+		display: none;
+	}
+
+	.header-search {
+		margin: 0 3.2rem;
+	}
+
+	.hamburger-menu {
+		display: block;
+		margin-left: auto;
+		justify-self: flex-end;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.header-search {
+		display: none;
+	}
 }

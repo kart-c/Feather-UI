@@ -1,0 +1,15 @@
+@import '../_variables.css';
+@import '../_reset.css';
+
+.rating-container i {
+	color: var(--warning-color);
+	cursor: pointer;
+}
+
+.rating-container.md {
+	font-size: var(--text-md);
+}
+
+.rating-container.lg {
+	font-size: var(--text-lg);
+}

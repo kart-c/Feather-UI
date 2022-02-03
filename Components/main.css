@@ -1,5 +1,5 @@
-@import '../_reset.css';
-@import '../_variables.css';
+@import './_reset.css';
+@import './_variables.css';
 @import '../Components/Alert/alert-component.css';
 @import '../Components/Avatar/avatar.css';
 @import '../Components/Badge/badge.css';

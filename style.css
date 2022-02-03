@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@100;300;400;700&display=swap');
+
+:root {
+	--doc-bg: #f7f7f7;
+	--doc-primary: #d5262d;
+	font-size: 62.5%; /* || Reset font size to 10px */
+}
+
+html {
+}
+
+/* || Reset basic styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: var(--doc-bg);
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	color: unset;
+	text-decoration: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+/* || Common styles same for all pages */
+
+.main-header {
+	align-items: center;
+	background-color: inherit;
+	box-shadow: 0 0 15px #9a9a9a;
+	display: flex;
+	left: 0;
+	padding: 1.6rem;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+.main-header > h1 {
+	cursor: pointer;
+	font-size: 3.2rem;
+	line-height: 4rem;
+}
+
+.doc-menu {
+	cursor: pointer;
+	display: none;
+	font-size: 2.4rem;
+}
+
+.main-header > nav {
+	margin-left: auto;
+}
+
+.header-nav-list {
+	display: flex;
+	font-size: 1.6rem;
+	list-style-type: none;
+}
+
+.header-nav-list > li {
+	margin: 0 1.6rem;
+}
+
+main {
+	margin-top: 7.2rem;
+	padding: 1.6rem;
+}
+
+/* || Landing page styles */
+
+.main-lp {
+	align-items: center;
+	display: flex;
+	height: calc(100vh - 8rem);
+	justify-content: center;
+}
+
+.hero-img-container {
+	min-width: 25rem;
+	width: 40%;
+}
+
+.hero-img-container img {
+	display: block;
+	width: 100%;
+}
+
+.main-lp-content {
+	width: 35%;
+}
+
+.main-lp-content h2 {
+	color: var(--doc-primary);
+	font-size: 7.2rem;
+	line-height: 8rem;
+}
+
+.main-lp-content p {
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	margin: 1.6rem 0 2.4rem;
+}
+
+.main-lp-content a {
+	background: var(--doc-primary);
+	border: 1px solid var(--doc-primary);
+	color: var(--doc-bg);
+	font-size: 1.6rem;
+	padding: 0.8rem 1.6rem;
+	transition: all 0.2s ease-in;
+}
+
+.main-lp-content a:hover {
+	background: var(--doc-bg);
+	border: 1px solid var(--doc-primary);
+	color: var(--doc-primary);
+	transition: all 0.2s ease-in;
+}
+
+/* || Landing Page responsive styles */
+
+@media only screen and (max-width: 760px) {
+	.main-lp {
+		flex-direction: column;
+	}
+
+	.hero-img-container {
+		margin-left: 12rem;
+	}
+
+	.main-lp-content {
+		text-align: center;
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.backdrop {
+		background: #00000050;
+		cursor: pointer;
+		display: none;
+		height: 100vh;
+		left: 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+	}
+
+	.active {
+		display: block;
+	}
+
+	.mobile-nav {
+		background-color: var(--doc-bg);
+		display: block;
+		height: calc(100vh - 7.2rem);
+		margin-top: 7.2rem;
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: 40%;
+		z-index: 3;
+	}
+
+	.main-header {
+		justify-content: space-between;
+	}
+
+	.doc-menu {
+		display: block;
+	}
+
+	.main-header nav {
+		display: none;
+	}
+
+	.hero-img-container {
+		margin-left: 8rem;
+	}
+
+	.mobile-nav li {
+		margin: 1.6rem;
+	}
+
+	.main-lp-content h2 {
+		font-size: 5.6rem;
+	}
+}

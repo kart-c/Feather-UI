@@ -43,7 +43,6 @@ button {
 }
 
 .main-header > h1 {
-	cursor: pointer;
 	font-size: 3.2rem;
 	line-height: 4rem;
 }

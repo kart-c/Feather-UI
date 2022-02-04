@@ -236,7 +236,7 @@ main {
 	color: var(--black);
 	border-radius: 5px;
 	background: var(--lynx-grey);
-	padding: 0.4rem;
+	padding: 0.25rem;
 }
 
 .current-pg {
@@ -252,6 +252,7 @@ main {
 	display: flex;
 	justify-content: space-between;
 	font-size: var(--text-md);
+	margin: 2.4rem 0;
 }
 
 .next-pg:hover,
@@ -263,9 +264,43 @@ main {
 	margin-left: 0.8rem;
 }
 
+h3 {
+	margin-top: 2.4rem;
+}
+
+.pg-p {
+	padding: 1.6rem 0 2.4rem;
+}
+
+.pg-description,
+.code-snippet {
+	border-bottom: 2px solid var(--lynx-grey);
+}
+
+.last-snippet {
+	border: 0;
+}
+
+.code-snippet {
+	font-size: 1.4rem;
+	padding: 0.4rem 0 2.4rem;
+}
+
+@media only screen and (max-width: 575px) {
+	aside {
+		display: none;
+	}
+
+	.main-content {
+		width: 95%;
+		margin: auto;
+	}
+}
+
 /* || iframe hidden in devices below 575px width */
 
 @media only screen and (max-width: 575px) {
+	.code-snippet,
 	iframe {
 		display: none;
 	}
@@ -303,4 +338,34 @@ main {
 	.install-pg p {
 		margin: 2.4rem 0;
 	}
+}
+
+/* || Alert Component Page */
+
+.alert-example {
+	width: 100%;
+}
+
+.alert-example .alert {
+	margin: 2rem auto;
+}
+
+/* || Avatar component page */
+
+.avatar-example {
+	height: 12rem;
+	margin: auto;
+	width: 12rem;
+}
+
+.avatar-pg .code-snippet {
+	padding: 2.4rem 0;
+}
+
+.sizes-example {
+	text-align: center;
+}
+
+.sizes-example .avatar {
+	margin: 0 1.6rem;
 }

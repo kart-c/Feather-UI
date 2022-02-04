@@ -10,12 +10,12 @@ body {
 .badge {
 	border-radius: 50%;
 	border: 3px solid #fff;
-	bottom: 8%;
-	right: 8%;
+	bottom: 9%;
+	right: 9%;
 	display: inline-block;
 	position: absolute;
-	height: 12%;
-	width: 12%;
+	height: 20%;
+	width: 20%;
 }
 
 .badge-online {

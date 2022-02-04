@@ -46,3 +46,7 @@
 .btn-round {
 	border-radius: 1rem;
 }
+
+.btn i {
+	margin-right: 0.4rem;
+}

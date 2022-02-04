@@ -7,59 +7,136 @@
 		<script src="https://kit.fontawesome.com/bbbaa28fd5.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="../main.css" />
 		<link rel="stylesheet" href="../../style.css" />
-		<title>Alert</title>
-		<style>
-			.alert {
-				margin: 2rem;
-			}
-		</style>
+		<title>Feather UI | Alert</title>
 	</head>
 	<body>
-		<div class="alert danger">
-			<i class="fas fa-exclamation-triangle theme-icon"></i>
-			<p>This is a danger alert—check it out!</p>
-		</div>
-		<div class="alert warning">
-			<i class="fas fa-exclamation theme-icon"></i>
-			<p>This is a warning alert—check it out!</p>
-		</div>
-		<div class="alert success">
-			<i class="fas fa-check-circle theme-icon"></i>
-			<p>This is a success alert—check it out!</p>
-		</div>
-		<div class="alert info">
-			<i class="fas fa-info-circle theme-icon"></i>
-			<p>This is a info alert—check it out!</p>
-		</div>
-		<div class="alert outline-danger">
-			<i class="fas fa-exclamation-triangle theme-icon"></i>
-			<p>This is a danger alert—check it out!</p>
-		</div>
-		<div class="alert outline-warning">
-			<i class="fas fa-exclamation theme-icon"></i>
-			<p>This is a warning alert—check it out!</p>
-		</div>
-		<div class="alert outline-success">
-			<i class="fas fa-check-circle theme-icon"></i>
-			<p>This is a success alert—check it out!</p>
-		</div>
-		<div class="alert outline-info">
-			<i class="fas fa-info-circle theme-icon"></i>
-			<p>This is a info alert—check it out!</p>
-		</div>
-		<div class="alert alert-cancel outline-danger">
-			<div>
-				<i class="fas fa-exclamation-triangle theme-icon"></i>
-				<p>This is a danger alert—check it out!</p>
-			</div>
-			<i class="far fa-times-circle cancel-btn"></i>
-		</div>
-		<div class="alert alert-cancel outline-warning">
-			<div>
-				<i class="fas fa-exclamation theme-icon"></i>
-				<p>This is a warning alert—check it out!</p>
-			</div>
-			<i class="far fa-times-circle cancel-btn"></i>
-		</div>
+		<div class="backdrop"></div>
+		<header class="main-header">
+			<h1>Feather UI</h1>
+			<i class="fas fa-bars doc-menu"></i>
+			<nav>
+				<ul class="header-nav-list">
+					<li><a href="../../index.html">Home</a></li>
+					<li><a href="#">Documentation</a></li>
+					<li><a href="#">Contribute</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main">
+			<aside>
+				<nav class="main-nav">
+					<ul>
+						<span><a href="#">Getting Started</a></span>
+						<li class="main-nav-items"><a href="../../installation.html">Installation</a></li>
+						<li class="main-nav-items"><a href="#">Colors</a></li>
+						<li class="main-nav-items"><a href="#">Text Utilities</a></li>
+					</ul>
+					<ul>
+						<span><a href="#">Components</a></span>
+						<li class="main-nav-items current-pg">
+							<a href="#">Alert</a>
+						</li>
+						<li class="main-nav-items"><a href="../Avatar/avatar.html">Avatar</a></li>
+						<li class="main-nav-items"><a href="#">Badge</a></li>
+						<li class="main-nav-items"><a href="#">Button</a></li>
+						<li class="main-nav-items"><a href="#">Card</a></li>
+						<li class="main-nav-items"><a href="#">Image</a></li>
+						<li class="main-nav-items"><a href="#">Input</a></li>
+						<li class="main-nav-items"><a href="#">Navigation</a></li>
+						<li class="main-nav-items"><a href="#">Rating</a></li>
+					</ul>
+				</nav>
+			</aside>
+			<section class="main-content alert-pg">
+				<h2>Alert</h2>
+				<p class="pg-description pg-p">
+					An alert displays a short, important message in a way that attracts the user's attention
+					without interrupting the user's task.
+				</p>
+				<h3>Simple Alert</h3>
+				<p class="pg-p">
+					Simple Alerts can be created in following format by adding
+					<code class="inline-code">alert</code> class to a container which will include an icon and
+					a alert message.
+				</p>
+				<div class="alert-example">
+					<div class="alert danger">
+						<i class="fas fa-exclamation-triangle theme-icon"></i>
+						<p>This is a danger alert—check it out!</p>
+					</div>
+					<div class="alert warning">
+						<i class="fas fa-exclamation theme-icon"></i>
+						<p>This is a warning alert—check it out!</p>
+					</div>
+					<div class="alert success">
+						<i class="fas fa-check-circle theme-icon"></i>
+						<p>This is a success alert—check it out!</p>
+					</div>
+					<div class="alert info">
+						<i class="fas fa-info-circle theme-icon"></i>
+						<p>This is a info alert—check it out!</p>
+					</div>
+				</div>
+				<div class="code-snippet">
+					<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkart-c%2FCL-code-snippets%2Fblob%2Fmain%2Fsimple-alert.html&style=vs2015&showBorder=on&showFileMeta=on&showCopy=on&fetchFromJsDelivr=on"></script>
+				</div>
+				<h3>Outline Alert</h3>
+				<p class="pg-p">
+					Outline Alerts can be created by adding <code class="inline-code">outline</code>-variant
+					name to the alert container.
+				</p>
+				<div class="alert-example">
+					<div class="alert outline-danger">
+						<i class="fas fa-exclamation-triangle theme-icon"></i>
+						<p>This is a danger alert—check it out!</p>
+					</div>
+					<div class="alert outline-warning">
+						<i class="fas fa-exclamation theme-icon"></i>
+						<p>This is a warning alert—check it out!</p>
+					</div>
+					<div class="alert outline-success">
+						<i class="fas fa-check-circle theme-icon"></i>
+						<p>This is a success alert—check it out!</p>
+					</div>
+					<div class="alert outline-info">
+						<i class="fas fa-info-circle theme-icon"></i>
+						<p>This is a info alert—check it out!</p>
+					</div>
+				</div>
+				<div class="code-snippet">
+					<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkart-c%2FCL-code-snippets%2Fblob%2Fmain%2Foutline-alert.html&style=vs2015&showBorder=on&showFileMeta=on&showCopy=on&fetchFromJsDelivr=on"></script>
+				</div>
+				<h3>Cancel Alert</h3>
+				<p class="pg-p">
+					Cancel Alert can be created by adding an extra icon with class
+					<code class="inline-code">cancel-btn</code> on it.
+				</p>
+				<div class="alert-example">
+					<div class="alert alert-cancel outline-danger">
+						<div>
+							<i class="fas fa-exclamation-triangle theme-icon"></i>
+							<p>This is a danger alert—check it out!</p>
+						</div>
+						<i class="far fa-times-circle cancel-btn"></i>
+					</div>
+					<div class="alert alert-cancel outline-warning">
+						<div>
+							<i class="fas fa-exclamation theme-icon"></i>
+							<p>This is a warning alert—check it out!</p>
+						</div>
+						<i class="far fa-times-circle cancel-btn"></i>
+					</div>
+				</div>
+				<div class="code-snippet last-snippet">
+					<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkart-c%2FCL-code-snippets%2Fblob%2Fmain%2Fcancel-alert.html&style=vs2015&showBorder=on&showFileMeta=on&showCopy=on&fetchFromJsDelivr=on"></script>
+				</div>
+				<div class="main-footer">
+					<a href="#" class="previous-pg"><i class="fas fa-arrow-left"></i> Text-Utilities</a>
+					<a href="../Avatar/avatar.html" class="next-pg"
+						>Avatar <i class="fas fa-arrow-right"></i
+					></a>
+				</div>
+			</section>
+		</main>
 	</body>
 </html>

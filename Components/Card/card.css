@@ -28,7 +28,7 @@
 	transition: box-shadow 0.2s ease-in;
 }
 
-.card-shadow .content {
+.card.card-shadow .content {
 	border: 0;
 }
 
@@ -84,7 +84,7 @@
 }
 
 .overlay h3 {
-	top: 16rem;
+	top: 18rem;
 }
 
 .overlay h4 {
@@ -177,7 +177,7 @@
 .img-scroll {
 	position: absolute;
 	left: 35%;
-	top: 57%;
+	top: 60%;
 }
 
 .img-scroll span {

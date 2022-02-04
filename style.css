@@ -367,5 +367,15 @@ h3 {
 }
 
 .sizes-example .avatar {
-	margin: 0 1.6rem;
+	margin: 0 0.8rem;
+}
+
+/* Badge Component Page */
+
+.badge-example {
+	text-align: center;
+}
+
+.badge-example > .badge-container {
+	margin: 0 0.8rem;
 }

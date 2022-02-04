@@ -349,3 +349,23 @@ h3 {
 .alert-example .alert {
 	margin: 2rem auto;
 }
+
+/* || Avatar component page */
+
+.avatar-example {
+	height: 12rem;
+	margin: auto;
+	width: 12rem;
+}
+
+.avatar-pg .code-snippet {
+	padding: 2.4rem 0;
+}
+
+.sizes-example {
+	text-align: center;
+}
+
+.sizes-example .avatar {
+	margin: 0 1.6rem;
+}

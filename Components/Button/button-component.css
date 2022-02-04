@@ -109,3 +109,8 @@
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
 }
+
+.btn-link {
+	border-radius: 5px;
+	box-shadow: 0 0 10px var(--lynx-grey);
+}

@@ -370,7 +370,7 @@ h3 {
 	margin: 0 0.8rem;
 }
 
-/* Badge Component Page */
+/* || Badge Component Page */
 
 .badge-example {
 	text-align: center;
@@ -378,4 +378,15 @@ h3 {
 
 .badge-example > .badge-container {
 	margin: 0 0.8rem;
+}
+
+/* || Button Component Page */
+
+.button-example {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.button-example button {
+	margin: 0.8rem;
 }

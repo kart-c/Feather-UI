@@ -2,7 +2,6 @@
 	color: var(--lynx-white);
 	font-size: var(--text-md);
 	padding: 0.8rem 1.6rem;
-	position: relative;
 }
 
 .btn-primary {
@@ -97,17 +96,13 @@
 }
 
 .float-icon {
+	align-items: center;
 	border-radius: 50%;
-	margin: 0;
+	display: flex;
 	height: 5.6rem;
+	justify-content: center;
+	margin: 0;
 	width: 5.6rem;
-}
-
-.float-icon > i {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translateX(-50%) translateY(-50%);
 }
 
 .btn-link {

@@ -1,6 +1,3 @@
-@import '../_variables.css';
-@import '../_reset.css';
-
 .card {
 	border-radius: 1rem;
 	overflow: hidden;
@@ -86,7 +83,7 @@
 }
 
 .overlay h3 {
-	top: 18rem;
+	top: 16rem;
 }
 
 .overlay h4 {
@@ -179,7 +176,7 @@
 .img-scroll {
 	position: absolute;
 	left: 35%;
-	top: 60%;
+	top: 57%;
 }
 
 .img-scroll span {
@@ -236,12 +233,11 @@
 	justify-self: center;
 	margin: 0.8rem 1.6rem;
 	text-align: center;
-	width: 60%;
+	width: 65%;
 }
 
 .horizontal-card .remove-btn {
 	background-color: var(--lynx-grey);
-	box-sizing: content-box;
 	grid-column: 2/3;
 	grid-row: 3/4;
 }
@@ -259,8 +255,10 @@
 }
 
 #product-count {
+	cursor: pointer;
 	height: 2rem;
 	margin-left: 2rem;
+	outline: 0;
 	text-align: center;
 	width: 5rem;
 }

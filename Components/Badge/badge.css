@@ -1,11 +1,3 @@
-:root {
-	--status-online: #18e721;
-	--status-offline: #858685;
-	--status-dnd: #c32015;
-	--icon-badge: #e7181d;
-	--white: #fff;
-}
-
 body {
 	font-family: sans-serif;
 }
@@ -17,9 +9,9 @@ body {
 
 .badge {
 	border-radius: 50%;
-	border: 3px solid var(--white);
-	bottom: 9%;
-	right: 9%;
+	border: 3px solid #fff;
+	bottom: 8%;
+	right: 8%;
 	display: inline-block;
 	position: absolute;
 	height: 12%;
@@ -27,34 +19,34 @@ body {
 }
 
 .badge-online {
-	background-color: var(--status-online);
+	background-color: var(--success-color);
 }
 
 .badge-offline {
-	background-color: var(--status-offline);
+	background-color: var(--grey);
 }
 
 .badge-dnd {
-	background-color: var(--status-dnd);
+	background-color: var(--primary-color);
 }
 
 .icon-lg {
-	height: 2rem;
-	font-size: 2rem;
-	width: 2rem;
+	height: 3.2rem;
+	font-size: 3.2rem;
+	width: 3.2rem;
 }
 
 .icon-badge {
-	background-color: var(--icon-badge);
+	background-color: var(--primary-color);
 	border-radius: 50%;
-	color: var(--white);
+	color: #fff;
 	display: inline-flex;
 	align-items: center;
-	font-size: 0.8rem;
+	font-size: 1rem;
 	height: 65%;
 	justify-content: center;
 	position: absolute;
-	right: -25%;
-	top: -25%;
+	right: -20%;
+	top: -20%;
 	width: 65%;
 }

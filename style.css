@@ -6,9 +6,6 @@
 	font-size: 62.5%; /* || Reset font size to 10px */
 }
 
-html {
-}
-
 /* || Reset basic styles */
 * {
 	box-sizing: border-box;
@@ -30,7 +27,7 @@ button {
 	cursor: pointer;
 }
 
-/* || Common styles same for all pages */
+/* || Common header styles same for all pages */
 
 .main-header {
 	align-items: center;
@@ -46,7 +43,6 @@ button {
 }
 
 .main-header > h1 {
-	cursor: pointer;
 	font-size: 3.2rem;
 	line-height: 4rem;
 }
@@ -149,7 +145,7 @@ main {
 		background: #00000050;
 		cursor: pointer;
 		display: none;
-		height: 100vh;
+		height: calc(100vh - 7.2rem);
 		left: 0;
 		position: fixed;
 		top: 0;
@@ -195,5 +191,116 @@ main {
 
 	.main-lp-content h2 {
 		font-size: 5.6rem;
+	}
+}
+
+/* || Common style for main content */
+
+.main {
+	display: flex;
+}
+
+.main aside {
+	flex-basis: 20rem;
+	font-size: var(--text-md);
+}
+
+.main-nav > ul {
+	color: var(--black);
+	list-style: none;
+	font-weight: 700;
+	margin: 2.4rem 0 0 1.6rem;
+}
+
+.main-nav span {
+	border-bottom: 1px solid var(--grey);
+	padding-bottom: 0.8rem;
+}
+
+.main-nav-items {
+	font-size: 1.4rem;
+	font-weight: 400;
+	margin-left: 1.6rem;
+	padding: 0.8rem 0;
+}
+
+.main-nav-items:first-of-type {
+	margin-top: 1.6rem;
+}
+
+.main-nav-items:last-of-type {
+	margin-bottom: 1.6rem;
+}
+
+.inline-code {
+	color: var(--black);
+	border-radius: 5px;
+	background: var(--lynx-grey);
+	padding: 0.4rem;
+}
+
+.current-pg {
+	color: var(--doc-primary);
+}
+
+.main-content {
+	margin-top: 1.6rem;
+	width: 75%;
+}
+
+.main-footer {
+	display: flex;
+	justify-content: space-between;
+	font-size: var(--text-md);
+}
+
+.next-pg:hover,
+.previous-pg:hover {
+	color: var(--doc-primary);
+}
+
+.next-pg i {
+	margin-left: 0.8rem;
+}
+
+/* || iframe hidden in devices below 575px width */
+
+@media only screen and (max-width: 575px) {
+	iframe {
+		display: none;
+	}
+}
+
+/* || Installation page CSS */
+
+.install-pg {
+	display: flex;
+	flex-direction: column;
+	height: 56rem;
+}
+
+.install-pg > p {
+	line-height: 3.2rem;
+	margin: 3.2rem 0;
+	width: 80%;
+}
+
+.install-pg .next-pg {
+	margin-left: auto;
+}
+
+.main-footer {
+	margin-top: auto;
+}
+
+/* installation page responsive styles */
+
+@media only screen and (max-width: 575px) {
+	.install-pg h2 {
+		font-size: var(--text-lg);
+	}
+
+	.install-pg p {
+		margin: 2.4rem 0;
 	}
 }

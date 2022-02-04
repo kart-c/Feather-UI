@@ -5,32 +5,101 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="https://kit.fontawesome.com/bbbaa28fd5.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="../Avatar/avatar.css" />
-		<link rel="stylesheet" href="badge.css" />
-		<title>Badge</title>
+		<link rel="stylesheet" href="../main.css" />
+		<link rel="stylesheet" href="../../style.css" />
+		<title>Feather UI | Badge</title>
 	</head>
 	<body>
-		<h1>Badge on Avatar</h1>
-		<div class="badge-container">
-			<img src="../Assets/avatar-2.jpg" alt="user avatar" class="avatar avatar-lg" />
-			<span class="badge badge-online"></span>
-		</div>
-		<div class="badge-container">
-			<img src="../Assets/avatar-2.jpg" alt="user avatar" class="avatar avatar-md" />
-			<span class="badge badge-offline"></span>
-		</div>
-		<div class="badge-container">
-			<img src="../Assets/avatar-2.jpg" alt="user avatar" class="avatar avatar-sm" />
-			<span class="badge badge-dnd"></span>
-		</div>
-		<h1>Badge on Icon</h1>
-		<div class="badge-container icon-lg">
-			<i class="fas fa-shopping-bag"></i>
-			<span class="icon-badge">6</span>
-		</div>
-		<div class="badge-container icon-lg">
-			<i class="far fa-bell"></i>
-			<span class="icon-badge">12</span>
-		</div>
+		<div class="backdrop"></div>
+		<header class="main-header">
+			<h1>Feather UI</h1>
+			<i class="fas fa-bars doc-menu"></i>
+			<nav>
+				<ul class="header-nav-list">
+					<li><a href="../../index.html">Home</a></li>
+					<li><a href="#">Documentation</a></li>
+					<li><a href="#">Contribute</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main">
+			<aside>
+				<nav class="main-nav">
+					<ul>
+						<span><a href="../../installation.html">Getting Started</a></span>
+						<li class="main-nav-items"><a href="../../installation.html">Installation</a></li>
+						<li class="main-nav-items"><a href="../Colors/colors.html">Colors</a></li>
+						<li class="main-nav-items"><a href="../Utilities/utility.html">Text Utilities</a></li>
+					</ul>
+					<ul>
+						<span><a href="../Alert/alert.html">Components</a></span>
+						<li class="main-nav-items">
+							<a href="../Alert/alert.html">Alert</a>
+						</li>
+						<li class="main-nav-items"><a href="../Alert/alert.html">Avatar</a></li>
+						<li class="main-nav-items current-pg"><a href="#">Badge</a></li>
+						<li class="main-nav-items"><a href="../Button/button.html">Button</a></li>
+						<li class="main-nav-items"><a href="../Card/card.html">Card</a></li>
+						<li class="main-nav-items"><a href="../Image/image.html">Image</a></li>
+						<li class="main-nav-items"><a href="../Input/input.html">Input</a></li>
+						<li class="main-nav-items"><a href="../Navigation/navigation.html">Navigation</a></li>
+						<li class="main-nav-items"><a href="../Rating/rating.html">Rating</a></li>
+					</ul>
+				</nav>
+			</aside>
+			<section class="main-content avatar-pg">
+				<h2>Badge</h2>
+				<p class="pg-description pg-p">
+					A badge component is used to add additional information to the content.
+				</p>
+				<h3>Avatar Badge</h3>
+				<p class="pg-p">
+					Avatar badge are used to represent if a user's status which can be either online / offline
+					/ dnd. To use add a container with <code class="inline-code">badge-container</code> class.
+				</p>
+				<div class="badge-example">
+					<div class="badge-container">
+						<img src="../../Assets/avatar-2.jpg" alt="user avatar" class="avatar avatar-lg" />
+						<span class="badge badge-online"></span>
+					</div>
+					<div class="badge-container">
+						<img src="../../Assets/avatar-2.jpg" alt="user avatar" class="avatar avatar-md" />
+						<span class="badge badge-offline"></span>
+					</div>
+					<div class="badge-container">
+						<img src="../../Assets/avatar-2.jpg" alt="user avatar" class="avatar avatar-sm" />
+						<span class="badge badge-dnd"></span>
+					</div>
+				</div>
+				<div class="code-snippet">
+					<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkart-c%2FCL-code-snippets%2Fblob%2Fmain%2Fbadge.html&style=vs2015&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
+				</div>
+				<h3>Icon Badge</h3>
+				<p class="pg-p">Icon badge are number badges on icon to show user useful information.</p>
+				<div class="badge-example">
+					<div class="badge-container icon-lg">
+						<i class="fas fa-shopping-bag"></i>
+						<span class="icon-badge">6</span>
+					</div>
+					<div class="badge-container icon-lg">
+						<i class="far fa-bell"></i>
+						<span class="icon-badge">12</span>
+					</div>
+				</div>
+
+				<div class="code-snippet last-snippet">
+					<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkart-c%2FCL-code-snippets%2Fblob%2Fmain%2Fbadge2.html&style=vs2015&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
+				</div>
+
+				<div class="main-footer">
+					<a href="../Avatar/avatar.html" class="previous-pg"
+						><i class="fas fa-arrow-left"></i> Avatar</a
+					>
+					<a href="../Button/button.html" class="next-pg"
+						>Button <i class="fas fa-arrow-right"></i
+					></a>
+				</div>
+			</section>
+		</main>
 	</body>
 </html>

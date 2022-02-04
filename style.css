@@ -390,3 +390,17 @@ h3 {
 .button-example button {
 	margin: 0.8rem;
 }
+
+/* || Card Component Page */
+
+.card-example .card {
+	margin: auto;
+}
+
+.card-pg .code-snippet {
+	padding-top: 2.4rem;
+}
+
+.card h3 {
+	margin: 0;
+}

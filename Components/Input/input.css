@@ -1,9 +1,6 @@
-@import '../_variables.css';
-@import '../_reset.css';
-
 .input-container {
-	font-size: 1.2rem;
 	line-height: 2rem;
+	font-size: 1.2rem;
 }
 
 .input-container label {
@@ -13,12 +10,12 @@
 }
 
 .input-container input {
-	display: block;
 	min-width: 20rem;
 	outline: 0;
+	font-size: 1.4rem;
 	padding: 0.8rem;
 	transition: border 0.2s ease-in;
-	width: 60%;
+	width: 100%;
 }
 
 input:focus {
@@ -39,12 +36,6 @@ input:focus {
 
 .valid small {
 	color: var(--success-color);
-}
-
-.inline-input {
-	display: inline-block;
-	margin: 0.8rem 1.6rem;
-	width: 20rem;
 }
 
 /* radio and checkbox style */
@@ -78,4 +69,19 @@ input:focus {
 
 .disabled input {
 	cursor: not-allowed;
+}
+
+.icon-input {
+	position: relative;
+}
+
+.icon {
+	position: absolute;
+	top: 50%;
+	left: 1%;
+	transform: translateY(-50%);
+}
+
+.icon-input input {
+	padding-left: 1.6rem;
 }

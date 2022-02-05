@@ -440,3 +440,44 @@ h3 {
 .color-pg:last-of-type {
 	padding-bottom: 2.4rem;
 }
+
+/* || Image Page Styles */
+
+.image-example {
+	display: flex;
+	justify-content: center;
+}
+
+.image-pg .code-snippet {
+	padding-top: 2.4rem;
+}
+
+.image-pg small {
+	font-size: 1.2rem;
+}
+
+/* || Input page styles */
+
+.input-example {
+	width: 50%;
+	margin: auto;
+}
+
+.input-example .input-container {
+	margin: 2.4rem 0;
+}
+
+.input-example .radio-container {
+	display: inline-block;
+	margin: 0.8rem;
+}
+
+.input-example .checkbox-container {
+	margin: 0.8rem;
+}
+
+@media only screen and (max-width: 575px) {
+	.input-example {
+		width: 80%;
+	}
+}

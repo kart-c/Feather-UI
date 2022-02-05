@@ -495,3 +495,13 @@ h3 {
 .header {
 	margin: 8rem 0 16rem;
 }
+
+/* || Rating page style */
+
+.rating-example {
+	text-align: center;
+}
+
+.rating-example .rating-container {
+	margin: 0.8rem 0;
+}

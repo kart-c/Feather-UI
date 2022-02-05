@@ -5,8 +5,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="https://kit.fontawesome.com/bbbaa28fd5.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="input.css" />
-		<title>Input</title>
+		<link rel="stylesheet" href="../main.css" />
+		<link rel="stylesheet" href="../../style.css" />
+		<title>Feather UI | Image</title>
 		<style>
 			div {
 				margin: 5rem;
@@ -28,13 +29,19 @@
 			<input type="text" id="valid-password" name="username" placeholder="Enter your password" />
 			<small>* Password Verified</small>
 		</div>
-		<div class="input-container inline-input">
-			<label for="username-inline">Username *</label>
-			<input type="text" id="username-inline" name="username" placeholder="Enter your username" />
+		<div class="input-container">
+			<label for="username-icon">Username *</label>
+			<div class="icon-input">
+				<i class="fas fa-user icon"></i>
+				<input type="text" id="username-icon" name="username" placeholder="Enter your username" />
+			</div>
 		</div>
-		<div class="input-container inline-input">
-			<label for="password-inline">Password *</label>
-			<input type="text" id="password-inline" name="username" placeholder="Enter your password" />
+		<div class="input-container icon-input">
+			<label for="password-icon">Password *</label>
+			<div class="icon-input">
+				<i class="fas fa-lock icon"></i>
+				<input type="text" id="password-icon" name="username" placeholder="Enter your password" />
+			</div>
 		</div>
 		<div class="radio-container">
 			<input type="radio" name="example input" id="radio-input-1" />

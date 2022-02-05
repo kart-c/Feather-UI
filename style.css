@@ -324,7 +324,7 @@ h3 {
 	margin-left: auto;
 }
 
-.main-footer {
+.install-pg .main-footer {
 	margin-top: auto;
 }
 
@@ -389,4 +389,54 @@ h3 {
 
 .button-example button {
 	margin: 0.8rem;
+}
+
+/* || Card Component Page */
+
+.card-example .card {
+	margin: auto;
+}
+
+.card-pg .code-snippet {
+	padding-top: 2.4rem;
+}
+
+.card h3 {
+	margin: 0;
+}
+
+/* || Colors Page */
+
+.color-pg .colors-container {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 2.4rem 0;
+}
+
+.color-example {
+	align-items: center;
+	border-radius: 1rem;
+	box-shadow: 1px 1px 10px var(--lynx-grey);
+	display: flex;
+	font-size: var(--text-md);
+	justify-content: center;
+	height: 8rem;
+	width: 8rem;
+	margin: 1rem;
+}
+
+.single-clr {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.single-clr .black-bg {
+	color: var(--lynx-white);
+}
+
+.color-pg:last-of-type {
+	padding-bottom: 2.4rem;
 }

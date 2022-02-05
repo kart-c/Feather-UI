@@ -5,44 +5,111 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="https://kit.fontawesome.com/bbbaa28fd5.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="colors.css" />
-		<title>Color</title>
-		<style>
-			body {
-				padding: 1rem;
-			}
-			div {
-				align-items: center;
-				display: flex;
-				flex-wrap: wrap;
-			}
-			div > div {
-				align-items: center;
-				display: flex;
-				font-size: var(--text-md);
-				justify-content: center;
-				height: 8rem;
-				width: 8rem;
-			}
-			div > div {
-				margin: 1rem;
-				border-radius: 1rem;
-				box-shadow: 1px 1px 10px var(--lynx-grey);
-			}
-		</style>
+		<link rel="stylesheet" href="../main.css" />
+		<link rel="stylesheet" href="../../style.css" />
+		<title>Feather UI | Colors</title>
 	</head>
 	<body>
-		<div>
-			<div class="danger-bg">#f87171</div>
-			<div class="warning-bg">#fbbf24</div>
-			<div class="info-bg">#60a5fa</div>
-			<div class="success-bg">#34d339</div>
-			<div class="primary-bg">#ff3f6c</div>
-			<div class="secondary-bg">#ff723f</div>
-			<div class="lynx-white-bg">#f7f7f7</div>
-			<div class="lynx-grey-bg">#c5c5c5</div>
-			<div class="grey-bg">#9a9a9a</div>
-			<div class="black-bg" style="color: #fff">#282828</div>
-		</div>
+		<div class="backdrop"></div>
+		<header class="main-header">
+			<h1>Feather UI</h1>
+			<i class="fas fa-bars doc-menu"></i>
+			<nav>
+				<ul class="header-nav-list">
+					<li><a href="../../index.html">Home</a></li>
+					<li><a href="#">Documentation</a></li>
+					<li><a href="#">Contribute</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main">
+			<aside>
+				<nav class="main-nav">
+					<ul>
+						<span><a href="../../installation.html">Getting Started</a></span>
+						<li class="main-nav-items"><a href="../../installation.html">Installation</a></li>
+						<li class="main-nav-items current-pg"><a href="#">Colors</a></li>
+						<li class="main-nav-items"><a href="../Utilities/utility.html">Text Utilities</a></li>
+					</ul>
+					<ul>
+						<span><a href="../Alert/alert.html">Components</a></span>
+						<li class="main-nav-items">
+							<a href="../Alert/alert.html">Alert</a>
+						</li>
+						<li class="main-nav-items"><a href="../Alert/alert.html">Avatar</a></li>
+						<li class="main-nav-items"><a href="../Badge/badge.html">Badge</a></li>
+						<li class="main-nav-items"><a href="../Button/button.html">Button</a></li>
+						<li class="main-nav-items"><a href="../Card/card.html">Card</a></li>
+						<li class="main-nav-items"><a href="../Image/image.html">Image</a></li>
+						<li class="main-nav-items"><a href="../Input/input.html">Input</a></li>
+						<li class="main-nav-items"><a href="../Navigation/navigation.html">Navigation</a></li>
+						<li class="main-nav-items"><a href="../Rating/rating.html">Rating</a></li>
+					</ul>
+				</nav>
+			</aside>
+			<section class="main-content color-pg">
+				<h2>Colors</h2>
+				<p class="pg-description pg-p">Feather UI uses following colors for all its components.</p>
+				<div class="colors-container">
+					<div class="single-clr">
+						<div class="primary-bg color-example">#ff3f6c</div>
+						<p>primary</p>
+					</div>
+					<div class="single-clr">
+						<div class="secondary-bg color-example">#ff723f</div>
+						<p>secondary</p>
+					</div>
+					<div class="single-clr">
+						<div class="danger-bg color-example">#f87171</div>
+						<p>danger</p>
+					</div>
+					<div class="single-clr">
+						<div class="warning-bg color-example">#fbbf24</div>
+						<p>warning</p>
+					</div>
+					<div class="single-clr">
+						<div class="info-bg color-example">#60a5fa</div>
+						<p>info</p>
+					</div>
+					<div class="single-clr">
+						<div class="success-bg color-example">#34d339</div>
+						<p>success</p>
+					</div>
+					<div class="single-clr">
+						<div class="lynx-white-bg color-example">#f7f7f7</div>
+						<p>lynx-white</p>
+					</div>
+					<div class="single-clr">
+						<div class="lynx-grey-bg color-example">#c5c5c5</div>
+						<p>lynx-grey</p>
+					</div>
+					<div class="single-clr">
+						<div class="grey-bg color-example">#9a9a9a</div>
+						<p>grey</p>
+					</div>
+					<div class="single-clr">
+						<div class="black-bg color-example">#282828</div>
+						<p>black</p>
+					</div>
+				</div>
+				<p class="pg-p">
+					To use any of these colors as the CSS <code class="inline-code">color</code> property,
+					just add the <code class="inline-code">color-name</code>-clr as a class.
+				</p>
+				<p class="pg-p">
+					You can also choose these as your background color by adding
+					<code class="inline-code">color-name</code>-bg as the element class.
+				</p>
+				<div class="main-footer">
+					<a href="../../installation.html" class="previous-pg">
+						<i class="fas fa-arrow-left"></i> Installation
+					</a>
+					<a href="../Utilities/utility.html" class="next-pg">
+						Text Utilities
+						<i class="fas fa-arrow-right"></i>
+					</a>
+				</div>
+			</section>
+		</main>
 	</body>
 </html>

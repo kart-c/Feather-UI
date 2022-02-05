@@ -5,29 +5,101 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="https://kit.fontawesome.com/bbbaa28fd5.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="image.css" />
-		<title>Image</title>
-		<style>
-			div {
-				max-width: 70rem;
-				margin: 5rem;
-			}
-		</style>
+		<link rel="stylesheet" href="../main.css" />
+		<link rel="stylesheet" href="../../style.css" />
+		<title>Feather UI | Image</title>
 	</head>
 	<body>
-		<div>
-			<h1>Squared Images</h1>
-			<img src="../Assets/image-2.jpg" alt="square image 1" class="sq-img" />
-			<img src="../Assets/image-3.jpg" alt="square image 2" class="sq-img" />
-		</div>
-		<div>
-			<h1>Round Images</h1>
-			<img src="../Assets/image-2.jpg" alt="round image 1" class="round-img" />
-			<img src="../Assets/image-3.jpg" alt="round image 2" class="round-img" />
-		</div>
-		<div>
-			<h1>Responsive Image</h1>
-			<img src="../Assets/image-1.jpg" alt="responsive image" class="resp-img" />
-		</div>
+		<div class="backdrop"></div>
+		<header class="main-header">
+			<h1>Feather UI</h1>
+			<i class="fas fa-bars doc-menu"></i>
+			<nav>
+				<ul class="header-nav-list">
+					<li><a href="../../index.html">Home</a></li>
+					<li><a href="#">Documentation</a></li>
+					<li><a href="#">Contribute</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main">
+			<aside>
+				<nav class="main-nav">
+					<ul>
+						<span><a href="../../installation.html">Getting Started</a></span>
+						<li class="main-nav-items"><a href="../../installation.html">Installation</a></li>
+						<li class="main-nav-items"><a href="../Colors/colors.html">Colors</a></li>
+						<li class="main-nav-items"><a href="../Utilities/utility.html">Text Utilities</a></li>
+					</ul>
+					<ul>
+						<span><a href="../Alert/alert.html">Components</a></span>
+						<li class="main-nav-items">
+							<a href="../Alert/alert.html">Alert</a>
+						</li>
+						<li class="main-nav-items"><a href="../Alert/alert.html">Avatar</a></li>
+						<li class="main-nav-items"><a href="../Badge/badge.html">Badge</a></li>
+						<li class="main-nav-items"><a href="../Button/button.html">Button</a></li>
+						<li class="main-nav-items"><a href="../Card/card.html">Card</a></li>
+						<li class="main-nav-items current-pg"><a href="#">Image</a></li>
+						<li class="main-nav-items"><a href="../Input/input.html">Input</a></li>
+						<li class="main-nav-items"><a href="../Navigation/navigation.html">Navigation</a></li>
+						<li class="main-nav-items"><a href="../Rating/rating.html">Rating</a></li>
+					</ul>
+				</nav>
+			</aside>
+			<section class="main-content image-pg">
+				<h2>Image</h2>
+				<p class="pg-description pg-p">Use our image component to style your images.</p>
+				<h3>Square Image</h3>
+				<p class="pg-p">
+					Add the <code class="inline-code">sq-img</code> class to make any image into a square
+					shaped image.
+				</p>
+				<div class="image-example">
+					<img src="../../Assets/image-2.jpg" alt="square image 1" class="sq-img" />
+					<img src="../../Assets/image-3.jpg" alt="square image 2" class="sq-img" />
+				</div>
+				<div class="code-snippet">
+					<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkart-c%2FCL-code-snippets%2Fblob%2Fmain%2Fimage1.html&style=vs2015&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
+				</div>
+				<h3>Round Images</h3>
+				<p class="pg-p">
+					Add the <code class="inline-code">round-img</code> class to make circular shaped images.
+				</p>
+				<div class="image-example">
+					<img src="../../Assets/image-2.jpg" alt="round image 1" class="round-img" />
+					<img src="../../Assets/image-3.jpg" alt="round image 2" class="round-img" />
+				</div>
+				<div class="code-snippet">
+					<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkart-c%2FCL-code-snippets%2Fblob%2Fmain%2Fimage2.html&style=vs2015&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
+				</div>
+				<h3>Responsive Images</h3>
+				<p class="pg-p">
+					Use the <code class="inline-code">resp-img</code> class to make your images responsive.
+					Add a parent element for sizing purposes.
+				</p>
+				<div class="image-example">
+					<div>
+						<img src="../../Assets/image-1.jpg" alt="responsive image" class="resp-img" />
+					</div>
+				</div>
+				<div class="code-snippet last-snippet">
+					<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkart-c%2FCL-code-snippets%2Fblob%2Fmain%2Fimage3.html&style=vs2015&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
+				</div>
+				<small>
+					<strong>Note :</strong> If the image position is not as per your requirement, use the
+					<code class="inline-code">object-position</code> property to position the image.
+				</small>
+				<div class="main-footer">
+					<a href="../Card/card.html" class="previous-pg">
+						<i class="fas fa-arrow-left"></i> Card
+					</a>
+					<a href="../Input/input.html" class="next-pg">
+						Input
+						<i class="fas fa-arrow-right"></i>
+					</a>
+				</div>
+			</section>
+		</main>
 	</body>
 </html>

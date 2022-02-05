@@ -440,3 +440,18 @@ h3 {
 .color-pg:last-of-type {
 	padding-bottom: 2.4rem;
 }
+
+/* || Image Component Styles */
+
+.image-example {
+	display: flex;
+	justify-content: center;
+}
+
+.image-pg .code-snippet {
+	padding-top: 2.4rem;
+}
+
+.image-pg small {
+	font-size: 1.2rem;
+}

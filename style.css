@@ -481,3 +481,17 @@ h3 {
 		width: 80%;
 	}
 }
+
+/* || Navbar page style */
+
+.navbar-pg .code-snippet {
+	padding-top: 2.4rem;
+}
+
+.navbar-example {
+	text-align: center;
+}
+
+.header {
+	margin: 8rem 0 16rem;
+}

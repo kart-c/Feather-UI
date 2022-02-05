@@ -441,7 +441,7 @@ h3 {
 	padding-bottom: 2.4rem;
 }
 
-/* || Image Component Styles */
+/* || Image Page Styles */
 
 .image-example {
 	display: flex;
@@ -454,4 +454,24 @@ h3 {
 
 .image-pg small {
 	font-size: 1.2rem;
+}
+
+/* || Input page styles */
+
+.input-example {
+	width: 50%;
+	margin: auto;
+}
+
+.input-example .input-container {
+	margin: 2.4rem 0;
+}
+
+.input-example .radio-container {
+	display: inline-block;
+	margin: 0.8rem;
+}
+
+.input-example .checkbox-container {
+	margin: 0.8rem;
 }

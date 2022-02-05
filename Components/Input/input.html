@@ -8,64 +8,159 @@
 		<link rel="stylesheet" href="../main.css" />
 		<link rel="stylesheet" href="../../style.css" />
 		<title>Feather UI | Image</title>
-		<style>
-			div {
-				margin: 5rem;
-			}
-		</style>
 	</head>
 	<body>
-		<div class="input-container">
-			<label for="username">Username *</label>
-			<input type="text" id="username" name="username" placeholder="Enter your username" />
-		</div>
-		<div class="input-container error">
-			<label for="password">Password *</label>
-			<input type="text" id="password" name="password" placeholder="Enter your password" />
-			<small>* Wrong Password. Please try again</small>
-		</div>
-		<div class="input-container valid">
-			<label for="valid-password">Password *</label>
-			<input type="text" id="valid-password" name="username" placeholder="Enter your password" />
-			<small>* Password Verified</small>
-		</div>
-		<div class="input-container">
-			<label for="username-icon">Username *</label>
-			<div class="icon-input">
-				<i class="fas fa-user icon"></i>
-				<input type="text" id="username-icon" name="username" placeholder="Enter your username" />
-			</div>
-		</div>
-		<div class="input-container icon-input">
-			<label for="password-icon">Password *</label>
-			<div class="icon-input">
-				<i class="fas fa-lock icon"></i>
-				<input type="text" id="password-icon" name="username" placeholder="Enter your password" />
-			</div>
-		</div>
-		<div class="radio-container">
-			<input type="radio" name="example input" id="radio-input-1" />
-			<label for="radio-input-1">Radio Input 1</label>
-		</div>
-		<div class="radio-container">
-			<input type="radio" name="example input" id="radio-input-2" />
-			<label for="radio-input-2">Radio Input 2</label>
-		</div>
-		<div class="radio-container">
-			<input type="radio" name="example input" id="radio-input-3" />
-			<label for="radio-input-3">Radio Input 3</label>
-		</div>
-		<div class="radio-container disabled">
-			<input type="radio" name="disabled example input" id="radio-input-4" disabled />
-			<label for="radio-input-4">Disabled radio input</label>
-		</div>
-		<div class="checkbox-container">
-			<input type="checkbox" name="disabled example input" id="checkbox-1" />
-			<label for="checkbox-1">Checkbox input</label>
-		</div>
-		<div class="checkbox-container disabled">
-			<input type="checkbox" name="disabled example input" id="checkbox-1" disabled />
-			<label for="checkbox-1">Checkbox input</label>
-		</div>
+		<div class="backdrop"></div>
+		<header class="main-header">
+			<h1>Feather UI</h1>
+			<i class="fas fa-bars doc-menu"></i>
+			<nav>
+				<ul class="header-nav-list">
+					<li><a href="../../index.html">Home</a></li>
+					<li><a href="#">Documentation</a></li>
+					<li><a href="#">Contribute</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main">
+			<aside>
+				<nav class="main-nav">
+					<ul>
+						<span><a href="../../installation.html">Getting Started</a></span>
+						<li class="main-nav-items"><a href="../../installation.html">Installation</a></li>
+						<li class="main-nav-items"><a href="../Colors/colors.html">Colors</a></li>
+						<li class="main-nav-items"><a href="../Utilities/utility.html">Text Utilities</a></li>
+					</ul>
+					<ul>
+						<span><a href="../Alert/alert.html">Components</a></span>
+						<li class="main-nav-items">
+							<a href="../Alert/alert.html">Alert</a>
+						</li>
+						<li class="main-nav-items"><a href="../Alert/alert.html">Avatar</a></li>
+						<li class="main-nav-items"><a href="../Badge/badge.html">Badge</a></li>
+						<li class="main-nav-items"><a href="../Button/button.html">Button</a></li>
+						<li class="main-nav-items"><a href="../Card/card.html">Card</a></li>
+						<li class="main-nav-items"><a href="../Image/image.html">Image</a></li>
+						<li class="main-nav-items current-pg"><a href="#">Input</a></li>
+						<li class="main-nav-items"><a href="../Navigation/navigation.html">Navigation</a></li>
+						<li class="main-nav-items"><a href="../Rating/rating.html">Rating</a></li>
+					</ul>
+				</nav>
+			</aside>
+			<section class="main-content input-pg">
+				<h2>Input</h2>
+				<p class="pg-description pg-p">
+					Input are interactive element which are used to get information from the user.
+				</p>
+				<h3>Basic Input</h3>
+				<p class="pg-p">Use this basic input with different styles for different conditions.</p>
+				<div class="input-example">
+					<div class="input-container">
+						<label for="username">Username *</label>
+						<input type="text" id="username" name="username" placeholder="Enter your username" />
+					</div>
+					<div class="input-container error">
+						<label for="password">Password *</label>
+						<input type="text" id="password" name="password" placeholder="Enter your password" />
+						<small>* Wrong Password. Please try again</small>
+					</div>
+					<div class="input-container valid">
+						<label for="valid-password">Password *</label>
+						<input
+							type="text"
+							id="valid-password"
+							name="username"
+							placeholder="Enter your password"
+						/>
+						<small>* Password Verified</small>
+					</div>
+				</div>
+				<div class="code-snippet">
+					<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkart-c%2FCL-code-snippets%2Fblob%2Fmain%2Finput.html&style=vs2015&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
+				</div>
+				<h3>Icon Input</h3>
+				<p class="pg-p">You can also use icons with input.</p>
+				<div class="input-example">
+					<div class="input-container">
+						<label for="username-icon">Username *</label>
+						<div class="icon-input">
+							<i class="fas fa-user icon"></i>
+							<input
+								type="text"
+								id="username-icon"
+								name="username"
+								placeholder="Enter your username"
+							/>
+						</div>
+					</div>
+					<div class="input-container icon-input">
+						<label for="password-icon">Password *</label>
+						<div class="icon-input">
+							<i class="fas fa-lock icon"></i>
+							<input
+								type="text"
+								id="password-icon"
+								name="username"
+								placeholder="Enter your password"
+							/>
+						</div>
+					</div>
+				</div>
+				<div class="code-snippet">
+					<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkart-c%2FCL-code-snippets%2Fblob%2Fmain%2Finput2.html&style=vs2015&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
+				</div>
+				<h3>Radio Input</h3>
+				<p class="pg-p">
+					Radio inputs allows user to select one option from predefined set of multiple options.
+				</p>
+				<div class="input-example">
+					<div class="radio-container">
+						<input type="radio" name="example input" id="radio-input-1" />
+						<label for="radio-input-1">Radio Input 1</label>
+					</div>
+					<div class="radio-container">
+						<input type="radio" name="example input" id="radio-input-2" />
+						<label for="radio-input-2">Radio Input 2</label>
+					</div>
+					<div class="radio-container">
+						<input type="radio" name="example input" id="radio-input-3" />
+						<label for="radio-input-3">Radio Input 3</label>
+					</div>
+					<div class="radio-container disabled">
+						<input type="radio" name="disabled example input" id="radio-input-4" disabled />
+						<label for="radio-input-4">Disabled radio input</label>
+					</div>
+				</div>
+				<div class="code-snippet">
+					<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkart-c%2FCL-code-snippets%2Fblob%2Fmain%2Fradio1.html&style=vs2015&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
+				</div>
+				<h3>Checkbox Input</h3>
+				<p class="pg-p">
+					The checkbox is shown as a square box that is ticked (checked) when activated.
+				</p>
+				<div class="input-example">
+					<div class="checkbox-container">
+						<input type="checkbox" name="disabled example input" id="checkbox-1" />
+						<label for="checkbox-1">Checkbox input</label>
+					</div>
+					<div class="checkbox-container disabled">
+						<input type="checkbox" name="disabled example input" id="checkbox-1" disabled />
+						<label for="checkbox-1">Checkbox input</label>
+					</div>
+				</div>
+				<div class="code-snippet last-snippet">
+					<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkart-c%2FCL-code-snippets%2Fblob%2Fmain%2Fcheckbox.html&style=vs2015&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
+				</div>
+				<div class="main-footer">
+					<a href="../Image/image.html" class="previous-pg">
+						<i class="fas fa-arrow-left"></i> Image
+					</a>
+					<a href="../Navigation/navigation.html" class="next-pg">
+						Navigation
+						<i class="fas fa-arrow-right"></i>
+					</a>
+				</div>
+			</section>
+		</main>
 	</body>
 </html>

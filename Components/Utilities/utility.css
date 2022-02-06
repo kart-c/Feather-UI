@@ -1,8 +1,9 @@
-@import '../_variables.css';
-@import '../_reset.css';
-
 .grey-text {
 	color: var(--grey);
+}
+
+.align-left {
+	text-align: left;
 }
 
 .align-center {

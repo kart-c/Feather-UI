@@ -46,3 +46,8 @@ p {
 	font-size: var(--text-md);
 	line-height: var(--line-ht-md);
 }
+
+small {
+	font-size: 1rem;
+	line-height: 1.8rem;
+}

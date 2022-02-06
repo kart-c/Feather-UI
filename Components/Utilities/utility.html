@@ -5,33 +5,114 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="https://kit.fontawesome.com/bbbaa28fd5.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="utility.css" />
-		<title>Button</title>
-		<style>
-			div {
-				margin: 2rem;
-				width: 80%;
-			}
-		</style>
+		<link rel="stylesheet" href="../main.css" />
+		<link rel="stylesheet" href="../../style.css" />
+		<title>Feather UI | Text Utilities</title>
 	</head>
 	<body>
-		<div>
-			<h1>This is Heading 1</h1>
-			<h2>This is Heading 2</h2>
-			<h3>This is Heading 3</h3>
-			<h4>This is Heading 4</h4>
-		</div>
-		<div>
-			<p>This is a paragraph</p>
-		</div>
-		<div>
-			<small>This is small text</small>
-		</div>
-		<div><p class="grey-text">This is grey text</p></div>
-		<div>
-			<p>This text is aligned to the left</p>
-			<p class="align-center">This text is aligned to the center</p>
-			<p class="align-right">This text is aligned to the right</p>
-		</div>
+		<div class="backdrop"></div>
+		<header class="main-header">
+			<h1>Feather UI</h1>
+			<i class="fas fa-bars doc-menu"></i>
+			<nav>
+				<ul class="header-nav-list">
+					<li><a href="../../index.html">Home</a></li>
+					<li><a href="#">Documentation</a></li>
+					<li><a href="#">Contribute</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main">
+			<aside>
+				<nav class="main-nav">
+					<ul>
+						<span><a href="../../installation.html">Getting Started</a></span>
+						<li class="main-nav-items"><a href="../../installation.html">Installation</a></li>
+						<li class="main-nav-items"><a href="../Colors/colors.html">Colors</a></li>
+						<li class="main-nav-items current-pg">
+							<a href="#">Text Utilities</a>
+						</li>
+					</ul>
+					<ul>
+						<span><a href="../Alert/alert.html">Components</a></span>
+						<li class="main-nav-items">
+							<a href="../Alert/alert.html">Alert</a>
+						</li>
+						<li class="main-nav-items"><a href="../Alert/alert.html">Avatar</a></li>
+						<li class="main-nav-items"><a href="../Badge/badge.html">Badge</a></li>
+						<li class="main-nav-items"><a href="../Button/button.html">Button</a></li>
+						<li class="main-nav-items"><a href="../Card/card.html">Card</a></li>
+						<li class="main-nav-items"><a href="../Rating/rating.html">Image</a></li>
+						<li class="main-nav-items"><a href="../Input/input.html">Input</a></li>
+						<li class="main-nav-items"><a href="../Navigation/navigation.html">Navigation</a></li>
+						<li class="main-nav-items"><a href="../Rating/rating.html">Rating</a></li>
+					</ul>
+				</nav>
+			</aside>
+			<section class="main-content txt-utilites-pg">
+				<h2>Text Utilities</h2>
+				<p class="pg-description pg-p">Documentation and examples for common text utilities.</p>
+				<h3>Heading</h3>
+				<p class="pg-p">Our library uses 4 different heading sizes from h1 to h4.</p>
+				<div class="txt-example">
+					<h1>This is Heading 1 - 48px</h1>
+					<h2>This is Heading 2 - 32px</h2>
+					<h3>This is Heading 3 - 24px</h3>
+					<h4>This is Heading 4 - 16px</h4>
+				</div>
+				<div class="code-snippet">
+					<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkart-c%2FCL-code-snippets%2Fblob%2Fmain%2Ftxt.html&style=vs2015&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
+				</div>
+				<h3>Paragraph</h3>
+				<p class="pg-p">This is a paragraph example.</p>
+				<div class="txt-example">
+					<p>This is a simple paragraph - 16px</p>
+				</div>
+				<div class="code-snippet">
+					<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkart-c%2FCL-code-snippets%2Fblob%2Fmain%2Ftxt2.html&style=vs2015&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
+				</div>
+				<h3>Small text</h3>
+				<p class="pg-p">
+					Small tag is used to define smaller text (like copyright and other side comments).
+				</p>
+				<div class="txt-example">
+					<small>This is small text - 10px</small>
+				</div>
+				<div class="code-snippet">
+					<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkart-c%2FCL-code-snippets%2Fblob%2Fmain%2Ftxt3.html&style=vs2015&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
+				</div>
+				<h3>Grey text</h3>
+				<p class="pg-p">This is a grey text example.</p>
+				<div class="txt-example">
+					<p class="grey-text">This is grey text</p>
+				</div>
+				<div class="code-snippet">
+					<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkart-c%2FCL-code-snippets%2Fblob%2Fmain%2Fgrey.html&style=vs2015&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
+				</div>
+				<h3>Text Align</h3>
+				<p class="pg-p">
+					Text can be aligned using the <code class="inline-code">align-left</code>,
+					<code class="inline-code">align-center</code> or
+					<code class="inline-code">align-right</code> class.
+				</p>
+				<div class="txt-example align-eg">
+					<p class="align-left">This text is aligned to the left</p>
+					<p class="align-center">This text is aligned to the center</p>
+					<p class="align-right">This text is aligned to the right</p>
+				</div>
+				<div class="code-snippet last-snippet">
+					<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkart-c%2FCL-code-snippets%2Fblob%2Fmain%2Falign.html&style=vs2015&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
+				</div>
+				<div class="main-footer">
+					<a href="../Colors/colors.html" class="previous-pg">
+						<i class="fas fa-arrow-left"></i> Colors
+					</a>
+					<a href="../Alert/alert.html" class="next-pg">
+						Alert
+						<i class="fas fa-arrow-right"></i>
+					</a>
+				</div>
+			</section>
+		</main>
 	</body>
 </html>

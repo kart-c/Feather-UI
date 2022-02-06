@@ -481,3 +481,59 @@ h3 {
 		width: 80%;
 	}
 }
+
+/* || Navbar page style */
+
+.navbar-pg .code-snippet {
+	padding-top: 2.4rem;
+}
+
+.navbar-example {
+	text-align: center;
+}
+
+.header {
+	margin: 8rem 0 16rem;
+}
+
+/* || Rating page style */
+
+.rating-example {
+	text-align: center;
+}
+
+.rating-example .rating-container {
+	margin: 0.8rem 0;
+}
+
+/* || Text Utilities Page style */
+
+.txt-utilites-pg .code-snippet {
+	padding-top: 2.4rem;
+}
+
+.txt-example {
+	text-align: center;
+}
+
+.txt-example h1,
+.txt-example h2,
+.txt-example h3,
+.txt-example h4 {
+	margin: 0.8rem 0;
+}
+
+.align-eg {
+	border: 1px solid var(--lynx-grey);
+	padding: 1.6rem;
+}
+
+@media only screen and (max-width: 575px) {
+	.txt-example h1,
+	.txt-example h2,
+	.txt-example h3,
+	.txt-example h4 {
+		border-bottom: 1px solid var(--lynx-grey);
+		margin: 1.6rem 0;
+	}
+}

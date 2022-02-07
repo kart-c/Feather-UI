@@ -43,6 +43,7 @@ button {
 }
 
 .main-header > h1 {
+	color: var(--doc-primary);
 	font-size: 3.2rem;
 	line-height: 4rem;
 }
@@ -53,14 +54,11 @@ button {
 	font-size: 2.4rem;
 }
 
-.main-header > nav {
-	margin-left: auto;
-}
-
 .header-nav-list {
 	display: flex;
 	font-size: 1.6rem;
 	list-style-type: none;
+	margin-left: auto;
 }
 
 .header-nav-list > li {
@@ -148,13 +146,9 @@ main {
 		height: calc(100vh - 7.2rem);
 		left: 0;
 		position: fixed;
-		top: 0;
+		top: calc(100vh- 7.2rem);
 		width: 100%;
 		z-index: 1;
-	}
-
-	.active {
-		display: block;
 	}
 
 	.mobile-nav {
@@ -177,8 +171,12 @@ main {
 		display: block;
 	}
 
-	.main-header nav {
+	.header-nav-list {
 		display: none;
+	}
+
+	.active {
+		display: block;
 	}
 
 	.hero-img-container {
@@ -300,8 +298,7 @@ h3 {
 /* || iframe hidden in devices below 575px width */
 
 @media only screen and (max-width: 575px) {
-	.code-snippet,
-	iframe {
+	.code-snippet {
 		display: none;
 	}
 }
@@ -311,13 +308,17 @@ h3 {
 .install-pg {
 	display: flex;
 	flex-direction: column;
-	height: 56rem;
+	height: calc(100vh - 12rem);
 }
 
 .install-pg > p {
 	line-height: 3.2rem;
 	margin: 3.2rem 0;
 	width: 80%;
+}
+
+.install-pg .external-link:hover {
+	color: var(--info-color);
 }
 
 .install-pg .next-pg {
@@ -337,6 +338,7 @@ h3 {
 
 	.install-pg p {
 		margin: 2.4rem 0;
+		width: 100%;
 	}
 }
 
@@ -407,6 +409,12 @@ h3 {
 
 /* || Colors Page */
 
+.color-pg {
+	display: flex;
+	flex-direction: column;
+	height: calc(100vh - 12rem);
+}
+
 .color-pg .colors-container {
 	align-items: center;
 	display: flex;
@@ -437,8 +445,14 @@ h3 {
 	color: var(--lynx-white);
 }
 
-.color-pg:last-of-type {
-	padding-bottom: 2.4rem;
+.color-pg .main-footer {
+	margin-top: auto;
+}
+
+@media only screen and (max-width: 575px) {
+	.color-pg {
+		height: fit-content;
+	}
 }
 
 /* || Image Page Styles */

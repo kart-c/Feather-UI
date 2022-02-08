@@ -93,11 +93,23 @@
 
 .overlay-icon {
 	color: var(--lynx-white);
+	background-color: var(--lynx-white);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	cursor: pointer;
 	font-size: var(--text-lg);
 	position: absolute;
 	right: 5%;
+	right: 6%;
 	top: 5%;
+	height: 3.5rem;
+	width: 3.5rem;
+}
+
+.overlay-icon i {
+	color: var(--primary-color);
 }
 
 .card-badge {

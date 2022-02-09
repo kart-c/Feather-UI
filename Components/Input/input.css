@@ -57,9 +57,9 @@ input:focus {
 
 .radio-container input,
 .checkbox-container input {
-	min-width: 0;
-	width: 5rem;
+	margin-right: 0.8rem;
 	transform: scale(1.5);
+	outline: 0;
 }
 
 .disabled label {

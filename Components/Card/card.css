@@ -210,7 +210,7 @@
 
 .horizontal-card {
 	display: flex;
-	height: 15rem;
+	height: 16rem;
 	width: 70rem;
 }
 
@@ -229,7 +229,7 @@
 	flex-grow: 2;
 	grid-template-columns: 2fr 1.3fr;
 	grid-template-rows: 1fr 1fr 1fr;
-	padding: 0.8rem;
+	padding: 1.6rem;
 }
 
 .horizontal-card h4 {

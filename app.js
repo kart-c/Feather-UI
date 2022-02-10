@@ -1,5 +1,5 @@
 const backdrop = document.querySelector('.backdrop');
-const navList = document.querySelector('.header-nav-list');
+const navList = document.querySelector('aside');
 const mobileMenu = document.querySelector('.doc-menu');
 
 const menuClickHandler = () => {

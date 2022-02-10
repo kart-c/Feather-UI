@@ -551,3 +551,9 @@ h3 {
 		margin: 1.6rem 0;
 	}
 }
+
+aside {
+	position: sticky;
+	top: 7.2rem;
+	height: fit-content;
+}

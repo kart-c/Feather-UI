@@ -80,8 +80,7 @@ main {
 }
 
 .hero-img-container {
-	min-width: 25rem;
-	width: 40%;
+	width: 25rem;
 }
 
 .hero-img-container img {

@@ -80,8 +80,7 @@ main {
 }
 
 .hero-img-container {
-	min-width: 25rem;
-	width: 40%;
+	width: 25rem;
 }
 
 .hero-img-container img {
@@ -466,7 +465,7 @@ h3 {
 	padding-top: 2.4rem;
 }
 
-.image-pg small {
+small {
 	font-size: 1.2rem;
 }
 
@@ -551,8 +550,26 @@ h3 {
 	}
 }
 
+/* Mobile side navigation */
+
 aside {
 	position: sticky;
 	top: 7.2rem;
 	height: fit-content;
+	overflow-y: auto;
+}
+
+/* Toast Page Style */
+
+.toast-example {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: auto;
+	width: 70%;
+}
+
+.toast-example > .btn:first-of-type {
+	margin: 1.6rem 0;
 }

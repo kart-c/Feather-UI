@@ -2,7 +2,7 @@
 	border-radius: 1rem;
 	overflow: hidden;
 	position: relative;
-	width: 32rem;
+	width: 28rem;
 }
 
 .text-only .content {
@@ -60,8 +60,8 @@
 	cursor: pointer;
 	display: inline-block;
 	font-size: 1.4rem;
+	margin: 1.6rem 4px 0 0;
 	line-height: 2.2rem;
-	margin: 1.6rem 1.6rem 0 0;
 	padding: 0.8rem 1.6rem;
 }
 
@@ -99,13 +99,13 @@
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
-	font-size: var(--text-lg);
+	font-size: var(--text-md);
 	position: absolute;
 	right: 5%;
 	right: 6%;
 	top: 5%;
-	height: 3.5rem;
-	width: 3.5rem;
+	height: 3rem;
+	width: 3rem;
 }
 
 .overlay-icon i {
@@ -127,16 +127,17 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	margin-top: 1.6rem;
 }
 
-.icon-container {
-	cursor: pointer;
-	padding-top: 1.6rem;
+.card-btn__container .action-link {
+	margin: 0;
 }
 
 .icon-container > i {
+	cursor: pointer;
 	font-size: var(--text-md);
-	margin: 0 1.6rem;
+	margin: 0 0.8rem;
 }
 
 /* || product card style */
@@ -146,7 +147,7 @@
 }
 
 .product-card .card-img {
-	height: 35rem;
+	height: 30rem;
 }
 
 .product-card-badge {
@@ -189,7 +190,7 @@
 .img-scroll {
 	position: absolute;
 	left: 35%;
-	top: 60%;
+	top: 56%;
 }
 
 .img-scroll span {
@@ -210,13 +211,15 @@
 
 .horizontal-card {
 	display: flex;
-	height: 16rem;
-	width: 70rem;
+	min-width: fit-content;
+	max-width: 60rem;
+	width: auto;
 }
 
 .horizontal-card .card-img {
 	border-top-right-radius: 0;
-	width: 20%;
+	width: 15rem;
+	height: 20rem;
 }
 
 .horizontal-card .content {
@@ -225,96 +228,51 @@
 	border-top-left-radius: 0;
 	border-top-right-radius: 1rem;
 	border-top: 1px solid var(--black);
-	display: grid;
+	display: flex;
+	flex-direction: column;
 	flex-grow: 2;
-	grid-template-columns: 2fr 1.3fr;
-	grid-template-rows: 1fr 1fr 1fr;
+	justify-content: center;
 	padding: 1.6rem;
 }
 
-.horizontal-card h4 {
-	align-self: start;
-	grid-row: 2/3;
-	margin: 0;
+.product-count {
+	border: 1px solid var(--grey);
+	padding: 0.8rem 1.6rem;
+	width: fit-content;
 }
 
-.horizontal-card .action-link {
-	align-self: center;
-	background-color: var(--primary-color);
-	grid-column: 2/3;
-	grid-row: 1/2;
-	justify-self: center;
-	margin: 0.8rem 1.6rem;
-	text-align: center;
-	width: 65%;
+.product-count button {
+	background-color: transparent;
+	font-size: var(--text-md);
+}
+
+.product-count button:active {
+	opacity: 0.7;
+}
+
+.product-count > span {
+	font-size: var(--text-md);
+	margin: 0 1.6rem;
 }
 
 .horizontal-card .remove-btn {
 	background-color: var(--lynx-grey);
-	grid-column: 2/3;
-	grid-row: 3/4;
 }
 
 .buy-info {
-	align-items: center;
 	display: flex;
-	grid-column: 1/2;
-	grid-row: 3/4;
+	flex-direction: column;
 }
 
 .horizontal-card p {
-	grid-column: 1/2;
-	margin-left: 1.6rem;
+	border: 0;
 }
 
-#product-count {
-	cursor: pointer;
-	height: 2rem;
-	margin-left: 2rem;
-	outline: 0;
-	text-align: center;
-	width: 5rem;
+.horizontal-card .action-link {
+	background-color: var(--primary-color);
+	min-width: 10rem;
 }
 
-/* || responsive style for horizontal card */
-
-@media only screen and (max-width: 720px) {
-	.horizontal-card {
-		flex-direction: column;
-		height: auto;
-		width: 32rem;
-	}
-
-	.horizontal-card .card-img {
-		width: 100%;
-		height: 25rem;
-	}
-
-	.horizontal-card .content {
-		border-bottom-left-radius: 1rem;
-		border-left: 1px solid var(--black);
-		border-top: 0;
-		border-top-left-radius: 0;
-		border-top-right-radius: 0;
-		grid-template-columns: 1fr 1fr;
-	}
-
-	.horizontal-card p {
-		border: 0;
-	}
-
-	.horizontal-card h3,
-	.horizontal-card h4,
-	.horizontal-card .buy-info {
-		grid-column: 1/3;
-	}
-
-	.horizontal-card .action-link {
-		grid-row: 4/5;
-		grid-column: 2/3;
-	}
-
-	.horizontal-card .remove-btn {
-		grid-column: 1/2;
-	}
+.horizontal-card .remove-btn {
+	background-color: var(--lynx-grey);
 }

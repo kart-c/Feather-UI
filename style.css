@@ -569,3 +569,18 @@ aside {
 .toast-example > .btn:first-of-type {
 	margin: 1.6rem 0;
 }
+
+/* Modal Page Styles */
+
+.modal-example > button {
+	display: block;
+	margin: auto;
+}
+
+.modal-header h3 {
+	margin: 0;
+}
+
+.note {
+	font-size: 1.4rem;
+}

@@ -9,33 +9,23 @@
 		<link rel="stylesheet" href="../../style.css" />
 		<link rel="icon" type="image/x-icon" href="../../Assets/feather-ui.ico" />
 		<title>Feather UI | Modal</title>
-		<style>
-			h3 {
-				margin: 0;
-			}
-
-			.btn {
-				z-index: 100;
-				position: relative;
-			}
-		</style>
 	</head>
 	<body>
-		<button class="btn btn-info">Open Modal</button>
-		<div class="modal-backdrop">
+		<div class="modal-backdrop modal-hide"></div>
+		<div class="modal modal-hide">
 			<div class="modal-container">
-				<div>
+				<div class="modal-header">
 					<h3>Modal Title</h3>
 					<i class="fa-solid fa-circle-xmark"></i>
 				</div>
 				<p>
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae magnam expedita ad
-					voluptatibus! Error ea repudiandae voluptatem. Officia nesciunt nisi, rem nemo dolor
-					consequuntur velit ratione consequatur tempore hic. Vitae.
+					voluptatibus! Error ea repudiandae voluptatem.
 				</p>
 			</div>
 		</div>
-		<div class="modal-backdrop">
+		<div class="modal-backdrop modal-hide action-modal"></div>
+		<div class="modal modal-hide action-modal">
 			<div class="modal-container">
 				<div class="modal-header">
 					<h3>Modal Title</h3>
@@ -43,8 +33,7 @@
 				</div>
 				<p class="modal-content">
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae magnam expedita ad
-					voluptatibus! Error ea repudiandae voluptatem. Officia nesciunt nisi, rem nemo dolor
-					consequuntur velit ratione consequatur tempore hic. Vitae.
+					voluptatibus! Error ea repudiandae voluptatem.
 				</p>
 				<div class="modal-btn-container align-right">
 					<button class="btn btn-info">Action 1</button>
@@ -52,5 +41,92 @@
 				</div>
 			</div>
 		</div>
+		<div class="backdrop"></div>
+		<header class="main-header">
+			<h1><a href="../../index.html">Feather UI</a></h1>
+			<i class="fas fa-bars doc-menu"></i>
+			<ul class="header-nav-list">
+				<li><a href="../../index.html">Home</a></li>
+				<li><a href="../Alert/alert.html">Documentation</a></li>
+				<li><a href="https://github.com/kart-c/Feather-UI">Contribute</a></li>
+			</ul>
+		</header>
+		<main class="main">
+			<aside>
+				<nav class="main-nav">
+					<ul>
+						<span><a href="../../installation.html">Getting Started</a></span>
+						<li class="main-nav-items"><a href="../../installation.html">Installation</a></li>
+						<li class="main-nav-items"><a href="../Colors/colors.html">Colors</a></li>
+						<li class="main-nav-items"><a href="../Utilities/utility.html">Text Utilities</a></li>
+					</ul>
+					<ul>
+						<span><a href="../Alert/alert.html">Components</a></span>
+						<li class="main-nav-items">
+							<a href="../Alert/alert.html">Alert</a>
+						</li>
+						<li class="main-nav-items"><a href="../Alert/alert.html">Avatar</a></li>
+						<li class="main-nav-items"><a href="../Badge/badge.html">Badge</a></li>
+						<li class="main-nav-items"><a href="../Button/button.html">Button</a></li>
+						<li class="main-nav-items"><a href="../Card/card.html">Card</a></li>
+						<li class="main-nav-items"><a href="../Image/image.html">Image</a></li>
+						<li class="main-nav-items"><a href="../Input/input.html">Input</a></li>
+						<li class="main-nav-items current-pg"><a href="#">Modal</a></li>
+						<li class="main-nav-items"><a href="../Navigation/navigation.html">Navigation</a></li>
+						<li class="main-nav-items"><a href="../Rating/rating.html">Rating</a></li>
+						<li class="main-nav-items"><a href="../Toast/toast.html">Toast</a></li>
+					</ul>
+				</nav>
+			</aside>
+			<section class="main-content modal-pg">
+				<h2>Modal</h2>
+				<p class="pg-description pg-p">
+					The modal component provides a solid foundation for creating dialogs, popovers,
+					lightboxes, or whatever else.
+				</p>
+				<h3>Basic Modal</h3>
+				<p class="pg-p">This is an example of a basic modal.</p>
+				<div class="modal-example">
+					<button class="btn btn-info">Click Me</button>
+				</div>
+				<div class="code-snippet">
+					<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkart-c%2FCL-code-snippets%2Fblob%2Fmain%2Fmodal2.html&style=vs2015&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
+				</div>
+				<p class="pg-p">This is the Javascript used for togging the simple modal into view.</p>
+				<div class="code-snippet">
+					<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkart-c%2FCL-code-snippets%2Fblob%2Fmain%2Fmodal.js&style=vs2015&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
+				</div>
+				<h3>Modal with Buttons</h3>
+				<p class="pg-p">
+					Sometimes a modal requires action buttons to perform an action when it is open.
+				</p>
+				<div class="modal-example">
+					<button class="btn btn-info">Click Me</button>
+				</div>
+				<div class="code-snippet">
+					<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkart-c%2FCL-code-snippets%2Fblob%2Fmain%2Fmodal3.html&style=vs2015&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
+				</div>
+				<p class="pg-p">
+					This is the Javascript used for togging the modal with buttons into view.
+				</p>
+				<div class="code-snippet last-snippet">
+					<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkart-c%2FCL-code-snippets%2Fblob%2Fmain%2Fmodal.js&style=vs2015&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
+				</div>
+				<div class="note">
+					<strong>Note:</strong> Javascript is required for functionality, Feather UI provides only
+					the CSS required.
+				</div>
+				<div class="main-footer">
+					<a href="../Input/input.html" class="previous-pg">
+						<i class="fas fa-arrow-left"></i> Input
+					</a>
+					<a href="../Navigation/navigation.html" class="next-pg">
+						Navigation
+						<i class="fas fa-arrow-right"></i>
+					</a>
+				</div>
+			</section>
+		</main>
+		<script src="../../app.js"></script>
 	</body>
 </html>

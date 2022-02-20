@@ -35,3 +35,7 @@
 .modal-btn-container .btn:first-of-type {
 	margin-right: 1.6rem;
 }
+
+.modal-hide {
+	display: none;
+}

@@ -241,7 +241,7 @@ main {
 }
 
 .main-content {
-	margin-top: 1.6rem;
+	margin: 1.6rem 0 0 2.4rem;
 	width: 75%;
 }
 
@@ -294,7 +294,7 @@ h3 {
 
 	.main-content {
 		width: 100%;
-		margin: auto;
+		margin: 0 auto;
 	}
 }
 
@@ -551,7 +551,7 @@ small {
 aside {
 	position: sticky;
 	top: 7.2rem;
-	height: fit-content;
+	height: calc(100vh - 8.8rem);
 	overflow-y: auto;
 }
 

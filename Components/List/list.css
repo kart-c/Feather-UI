@@ -1,0 +1,39 @@
+.list {
+	font-size: var(--text-md);
+	list-style: none;
+	padding: 1.6rem;
+	border: 1px solid var(--black);
+}
+
+.list-heading {
+	font-weight: 700;
+}
+
+.list-item {
+	margin-left: 1.6rem;
+	padding: 1.6rem;
+}
+
+.stacked-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.stacked-list > i {
+	cursor: pointer;
+}
+
+.list-content {
+	display: flex;
+	align-items: center;
+}
+
+.list-content > img {
+	margin-right: 1.6rem;
+}
+
+.list-span {
+	display: flex;
+	flex-direction: column;
+}

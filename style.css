@@ -595,3 +595,11 @@ aside {
 	height: 10rem;
 	background-color: var(--info-color);
 }
+
+/* list page styles */
+
+.list-example {
+	max-width: 60rem;
+	margin: auto;
+	margin-bottom: 2.4rem;
+}

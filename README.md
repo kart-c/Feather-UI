@@ -53,4 +53,4 @@ Some of the components use Javascript for functionality. Although Feather UI doe
 
 ## Mobile Demo
 
-![Feather UI mobile](./Assets/featherui-mobile.gif)
+<img src='./Assets/featherui-mobile.gif' alt='Feather UI mobile' style='height: 500px; width: auto'/>

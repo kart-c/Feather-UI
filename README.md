@@ -26,10 +26,14 @@ The script tag here is to import the font awesome icon kit used in the library. 
 - Button
 - Card
 - Colors
-- Images
+- Grid
+- Image
 - Input
+- List
+- Modal
 - Navigation
 - Rating
+- Toast
 - Text Utilities
 
 ## Usage

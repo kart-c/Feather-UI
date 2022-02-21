@@ -2,10 +2,14 @@
 
 Feather UI is a free-to-use, lightweight component library which can help you develop your website faster by using out predefined components.
 
+---
+
 ## Technologies Used
 
 - HTML
 - CSS
+
+---
 
 ## Installation
 
@@ -20,26 +24,33 @@ The script tag here is to import the font awesome icon kit used in the library. 
 
 ## Components Included
 
-- Alert
-- Avatar
-- Badge
-- Button
-- Card
-- Colors
-- Grid
-- Image
-- Input
-- List
-- Modal
-- Navigation
-- Rating
-- Toast
-- Text Utilities
+- [Alert](https://feather-design.netlify.app/components/alert/alert)
+- [Avatar](https://feather-design.netlify.app/components/avatar/avatar)
+- [Badge](https://feather-design.netlify.app/components/badge/badge)
+- [Button](https://feather-design.netlify.app/components/button/button)
+- [Card](https://feather-design.netlify.app/components/card/card)
+- [Colors](https://feather-design.netlify.app/components/colors/colors)
+- [Grid](https://feather-design.netlify.app/components/grid/grid)
+- [Image](https://feather-design.netlify.app/components/image/image)
+- [Input](https://feather-design.netlify.app/components/input/input)
+- [List](https://feather-design.netlify.app/components/list/list)
+- [Modal](https://feather-design.netlify.app/components/modal/modal)
+- [Navigation](https://feather-design.netlify.app/components/navigation/navigation)
+- [Rating](https://feather-design.netlify.app/components/rating/rating)
+- [Toast](https://feather-design.netlify.app/components/toast/toast)
+- [Text Utilities](https://feather-design.netlify.app/components/utilities/utility)
+
+---
 
 ## Usage
 
 To use any components copy the code snippet given below each example from the documentation website.
+Some of the components use Javascript for functionality. Although Feather UI does not provide Javascript, code snippets for Javascript are provided.
 
-## Live link to documentation
+## Desktop Demo
 
-[Feather-UI](https://feather-ui.netlify.app)
+![Feather UI desktop](./Assets/featherui.gif)
+
+## Mobile Demo
+
+![Feather UI mobile](./Assets/featherui-mobile.gif)

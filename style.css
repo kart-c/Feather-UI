@@ -584,3 +584,14 @@ aside {
 .note {
 	font-size: 1.4rem;
 }
+
+/* Grid page styles */
+
+.grid-eg-div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: var(--text-md);
+	height: 10rem;
+	background-color: var(--info-color);
+}

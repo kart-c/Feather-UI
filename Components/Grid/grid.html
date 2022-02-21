@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="../main.css" />
 		<link rel="stylesheet" href="../../style.css" />
 		<link rel="icon" type="image/x-icon" href="../../Assets/feather-ui.ico" />
-		<title>Feather UI | Avatar</title>
+		<title>Feather UI | Grid</title>
 	</head>
 	<body>
 		<div class="backdrop"></div>
@@ -35,11 +35,11 @@
 						<li class="main-nav-items">
 							<a href="../Alert/alert.html">Alert</a>
 						</li>
-						<li class="main-nav-items current-pg"><a href="#">Avatar</a></li>
+						<li class="main-nav-items"><a href="../Alert/alert.html">Avatar</a></li>
 						<li class="main-nav-items"><a href="../Badge/badge.html">Badge</a></li>
 						<li class="main-nav-items"><a href="../Button/button.html">Button</a></li>
 						<li class="main-nav-items"><a href="../Card/card.html">Card</a></li>
-						<li class="main-nav-items"><a href="../Grid/grid.html">Grid</a></li>
+						<li class="main-nav-items current-pg"><a href="#">Grid</a></li>
 						<li class="main-nav-items"><a href="../Image/image.html">Image</a></li>
 						<li class="main-nav-items"><a href="../Input/input.html">Input</a></li>
 						<li class="main-nav-items"><a href="../Modal/modal.html">Modal</a></li>
@@ -50,44 +50,40 @@
 				</nav>
 			</aside>
 			<section class="main-content avatar-pg">
-				<h2>Avatar</h2>
+				<h2>Grid</h2>
 				<p class="pg-description pg-p">
-					Avatars are user profile pictures, usually found in circular shapes. Avatars can be used
-					for 'container' objects — projects, spaces, repositories, etcetera — to give them a
-					recognisable visual identity.
+					Grid component is used for organizing the layout of your website.
 				</p>
-				<h3>Profile Avatar</h3>
-				<p class="pg-p">
-					To create profile avatars simply add <code class="inline-code">avatar</code> class to your
-					<code class="inline-code">img</code> tag.
-				</p>
-				<div class="avatar-example">
-					<img src="../../Assets/avatar-1.jpg" alt="user avatar" class="avatar" />
+				<h3>Grid</h3>
+				<p class="pg-p">This is basic grid layout.</p>
+				<div class="grid-example">
+					<div class="grid grid-col-2 gap-2">
+						<div class="grid-eg-div">1</div>
+						<div class="grid-eg-div">2</div>
+						<div class="grid-eg-div">3</div>
+						<div class="grid-eg-div">4</div>
+						<div class="grid-eg-div">5</div>
+						<div class="grid-eg-div">6</div>
+					</div>
 				</div>
 				<div class="code-snippet">
-					<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkart-c%2FCL-code-snippets%2Fblob%2Fmain%2Favatar.html&style=vs2015&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
+					<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkart-c%2FCL-code-snippets%2Fblob%2Fmain%2Fgrid1.html&style=vs2015&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
 				</div>
-				<h3>Avatar Sizes</h3>
 				<p class="pg-p">
-					You can also have different sized square avatars by adding
-					<code class="inline-code">avatar-lg</code>, <code class="inline-code">avatar-md</code> or
-					<code class="inline-code">avatar-sm</code> as a class.
+					Use <code class="inline-code">grid-col-number</code> (number ranging from 2 to 6) to make
+					a grid column layout of your choice.
 				</p>
-				<div class="sizes-example">
-					<img src="../../Assets/avatar-1.jpg" alt="user avatar" class="avatar avatar-lg" />
-					<img src="../../Assets/avatar-1.jpg" alt="user avatar" class="avatar avatar-md" />
-					<img src="../../Assets/avatar-1.jpg" alt="user avatar" class="avatar avatar-sm" />
-				</div>
-
-				<div class="code-snippet last-snippet">
-					<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkart-c%2FCL-code-snippets%2Fblob%2Fmain%2Favatar2.html&style=vs2015&showBorder=on&showCopy=on&fetchFromJsDelivr=on"></script>
-				</div>
-
+				<p class="pg-p">
+					Use <code class="inline-code">gap-number</code> (number ranging from 1 to 3) to provide
+					gap/gutter between components.
+				</p>
 				<div class="main-footer">
-					<a href="../Alert/alert.html" class="previous-pg"
-						><i class="fas fa-arrow-left"></i> Alert</a
-					>
-					<a href="../Badge/badge.html" class="next-pg">Badge <i class="fas fa-arrow-right"></i></a>
+					<a href="../Card/card.html" class="previous-pg">
+						<i class="fas fa-arrow-left"></i> Card
+					</a>
+					<a href="../Image/image.html" class="next-pg">
+						Image <i class="fas fa-arrow-right"></i>
+					</a>
 				</div>
 			</section>
 		</main>

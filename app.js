@@ -3,6 +3,8 @@ const backdrop = document.querySelector('.backdrop');
 const navList = document.querySelector('.header-nav-list');
 const aside = document.querySelector('aside');
 const mobileMenu = document.querySelector('.doc-menu');
+const rangeInput = document.querySelector('.range-input');
+const rangeValue = document.querySelector('.range-value');
 
 const menuClickHandler = () => {
 	const style = window.getComputedStyle(navList);
@@ -53,11 +55,11 @@ const closeModal = () => {
 	modalBackdrop.classList.add('modal-hide');
 };
 
-modalExampleBtn.addEventListener('click', simpleModalHandler);
+modalExampleBtn ? modalExampleBtn.addEventListener('click', simpleModalHandler) : null;
 
-modalBackdrop.addEventListener('click', closeModal);
+modalBackdrop ? modalBackdrop.addEventListener('click', closeModal) : null;
 
-modalCloseBtn.addEventListener('click', closeModal);
+modalCloseBtn ? modalCloseBtn.addEventListener('click', closeModal) : null;
 
 const actionModalHandler = () => {
 	actionModalBackdrop.classList.remove('modal-hide');
@@ -69,8 +71,16 @@ const closeActionModal = () => {
 	actionModal.classList.add('modal-hide');
 };
 
-modalOpener.addEventListener('click', actionModalHandler);
+modalOpener ? modalOpener.addEventListener('click', actionModalHandler) : null;
 
-actionModalBackdrop.addEventListener('click', closeActionModal);
+actionModalBackdrop ? actionModalBackdrop.addEventListener('click', closeActionModal) : null;
 
-actionModalCloseBtn.addEventListener('click', closeActionModal);
+actionModalCloseBtn ? actionModalCloseBtn.addEventListener('click', closeActionModal) : null;
+
+// Range slider js
+
+const sliderChangeHandler = (e) => {
+	rangeValue.innerText = e.target.value;
+};
+
+rangeInput ? rangeInput.addEventListener('input', sliderChangeHandler) : null;

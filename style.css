@@ -603,3 +603,26 @@ aside {
 	margin: auto;
 	margin-bottom: 2.4rem;
 }
+
+/* Slider Page styles */
+
+.range-pg {
+	display: flex;
+	flex-direction: column;
+	height: calc(100vh - 12rem);
+}
+
+.slider-example {
+	width: 40rem;
+	margin: 0 auto;
+}
+
+.range-value {
+	display: block;
+	margin-top: 2.4rem;
+	font-size: 1.6rem;
+}
+
+.range-pg .main-footer {
+	margin-top: auto;
+}

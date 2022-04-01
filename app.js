@@ -5,6 +5,8 @@ const aside = document.querySelector('aside');
 const mobileMenu = document.querySelector('.doc-menu');
 const rangeInput = document.querySelector('.range-input');
 const rangeValue = document.querySelector('.range-value');
+const navbarHamburger = document.querySelectorAll('.hamburger-menu');
+const navbarNavMenu = document.querySelectorAll('.nav');
 
 const menuClickHandler = () => {
 	const style = window.getComputedStyle(navList);
@@ -30,9 +32,9 @@ const backdropClickHandler = () => {
 	backdrop.classList.remove('active');
 };
 
-mobileMenu.addEventListener('click', menuClickHandler);
+mobileMenu ? mobileMenu.addEventListener('click', menuClickHandler) : null;
 
-backdrop.addEventListener('click', backdropClickHandler);
+backdrop ? backdrop.addEventListener('click', backdropClickHandler) : null;
 
 // JS for opening Modal
 
@@ -84,3 +86,13 @@ const sliderChangeHandler = (e) => {
 };
 
 rangeInput ? rangeInput.addEventListener('input', sliderChangeHandler) : null;
+
+// Hamburger menu js - from navbar component
+
+navbarHamburger[0]
+	? navbarHamburger[0].addEventListener('click', () => navbarNavMenu[0].classList.toggle('active'))
+	: null;
+
+navbarHamburger[1]
+	? navbarHamburger[1].addEventListener('click', () => navbarNavMenu[1].classList.toggle('active'))
+	: null;

@@ -501,7 +501,11 @@ small {
 }
 
 .header {
-	margin: 8rem 0 16rem;
+	margin: 8rem 0 20rem;
+}
+
+.navbar-pg .last-snippet {
+	padding-top: 0;
 }
 
 /* || Rating page style */

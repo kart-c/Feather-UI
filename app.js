@@ -3,6 +3,10 @@ const backdrop = document.querySelector('.backdrop');
 const navList = document.querySelector('.header-nav-list');
 const aside = document.querySelector('aside');
 const mobileMenu = document.querySelector('.doc-menu');
+const rangeInput = document.querySelector('.range-input');
+const rangeValue = document.querySelector('.range-value');
+const navbarHamburger = document.querySelectorAll('.hamburger-menu');
+const navbarNavMenu = document.querySelectorAll('.nav');
 
 const menuClickHandler = () => {
 	const style = window.getComputedStyle(navList);
@@ -28,9 +32,9 @@ const backdropClickHandler = () => {
 	backdrop.classList.remove('active');
 };
 
-mobileMenu.addEventListener('click', menuClickHandler);
+mobileMenu ? mobileMenu.addEventListener('click', menuClickHandler) : null;
 
-backdrop.addEventListener('click', backdropClickHandler);
+backdrop ? backdrop.addEventListener('click', backdropClickHandler) : null;
 
 // JS for opening Modal
 
@@ -53,11 +57,11 @@ const closeModal = () => {
 	modalBackdrop.classList.add('modal-hide');
 };
 
-modalExampleBtn.addEventListener('click', simpleModalHandler);
+modalExampleBtn ? modalExampleBtn.addEventListener('click', simpleModalHandler) : null;
 
-modalBackdrop.addEventListener('click', closeModal);
+modalBackdrop ? modalBackdrop.addEventListener('click', closeModal) : null;
 
-modalCloseBtn.addEventListener('click', closeModal);
+modalCloseBtn ? modalCloseBtn.addEventListener('click', closeModal) : null;
 
 const actionModalHandler = () => {
 	actionModalBackdrop.classList.remove('modal-hide');
@@ -69,8 +73,26 @@ const closeActionModal = () => {
 	actionModal.classList.add('modal-hide');
 };
 
-modalOpener.addEventListener('click', actionModalHandler);
+modalOpener ? modalOpener.addEventListener('click', actionModalHandler) : null;
 
-actionModalBackdrop.addEventListener('click', closeActionModal);
+actionModalBackdrop ? actionModalBackdrop.addEventListener('click', closeActionModal) : null;
 
-actionModalCloseBtn.addEventListener('click', closeActionModal);
+actionModalCloseBtn ? actionModalCloseBtn.addEventListener('click', closeActionModal) : null;
+
+// Range slider js
+
+const sliderChangeHandler = (e) => {
+	rangeValue.innerText = e.target.value;
+};
+
+rangeInput ? rangeInput.addEventListener('input', sliderChangeHandler) : null;
+
+// Hamburger menu js - from navbar component
+
+navbarHamburger[0]
+	? navbarHamburger[0].addEventListener('click', () => navbarNavMenu[0].classList.toggle('active'))
+	: null;
+
+navbarHamburger[1]
+	? navbarHamburger[1].addEventListener('click', () => navbarNavMenu[1].classList.toggle('active'))
+	: null;

@@ -501,7 +501,11 @@ small {
 }
 
 .header {
-	margin: 8rem 0 16rem;
+	margin: 8rem 0 20rem;
+}
+
+.navbar-pg .last-snippet {
+	padding-top: 0;
 }
 
 /* || Rating page style */
@@ -602,4 +606,17 @@ aside {
 	max-width: 60rem;
 	margin: auto;
 	margin-bottom: 2.4rem;
+}
+
+/* Slider Page styles */
+
+.slider-example {
+	width: 40rem;
+	margin: 0 auto;
+}
+
+.range-value {
+	display: block;
+	margin-top: 2.4rem;
+	font-size: 1.6rem;
 }

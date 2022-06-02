@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="../main.css" />
 		<link rel="stylesheet" href="../../style.css" />
 		<link rel="icon" type="image/x-icon" href="../../Assets/feather-ui.ico" />
-		<title>Feather UI | Navigation</title>
+		<title>Feather UI | Range Slider</title>
 	</head>
 	<body>
 		<div class="backdrop"></div>
@@ -44,52 +44,40 @@
 						<li class="main-nav-items"><a href="../Input/input.html">Input</a></li>
 						<li class="main-nav-items"><a href="../List/list.html">List</a></li>
 						<li class="main-nav-items"><a href="../Modal/modal.html">Modal</a></li>
-						<li class="main-nav-items current-pg"><a href="#">Navigation</a></li>
-						<li class="main-nav-items">
-							<a href="../Range Slider/range-slider.html">Range Slider</a>
-						</li>
+						<li class="main-nav-items"><a href="../Navigation/navigation.html">Navigation</a></li>
+						<li class="main-nav-items current-pg"><a href="#">Range Slider</a></li>
 						<li class="main-nav-items"><a href="../Rating/rating.html">Rating</a></li>
 						<li class="main-nav-items"><a href="../Toast/toast.html">Toast</a></li>
 					</ul>
 				</nav>
 			</aside>
-			<section class="main-content navbar-pg">
-				<h2>Navigation</h2>
+			<section class="main-content range-pg">
+				<h2>Range Slider</h2>
 				<p class="pg-description pg-p">
-					Navbar provides navigation to important pages of your website.
+					Range slider is an input element which filters out the content based on the input given by
+					the user.
 				</p>
-				<h3>Basic Navbar</h3>
-				<p class="pg-p">To use basic navbar copy following code into your document.</p>
-				<div class="navbar-example">
-					<button class="btn btn-info btn-link">
-						<a href="./navigation-eg.html" target="'_blank">Simple Navbar</a>
-					</button>
+				<h3>Custom Range Slider</h3>
+				<p class="pg-p">Range slider is mostly used on e-commerce websites.</p>
+				<div class="slider-example">
+					<input type="range" min="1000" max="5000" step="100" class="range-input" value="0" />
+					<span class="range-value">0</span>
 				</div>
 				<div class="code-snippet">
-					<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkart-c%2FCL-code-snippets%2Fblob%2Fmain%2Fnavbar-hambur.html&style=vs2015&showCopy=on"></script>
+					<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkart-c%2FCL-code-snippets%2Fblob%2Fmain%2Fslider.html&style=vs2015&showCopy=on"></script>
 				</div>
-				<h3>Navbar with Icons</h3>
-				<p class="pg-p">To use navbar with icons use following code.</p>
-				<div class="navbar-example">
-					<button class="btn btn-info btn-link">
-						<a href="./navigation-eg.html" target="'_blank">Navbar with Icons</a>
-					</button>
-				</div>
-				<div class="code-snippet">
-					<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkart-c%2FCL-code-snippets%2Fblob%2Fmain%2Fhambur-2.html&style=vs2015&showCopy=on"></script>
-				</div>
-				<p class="pg-p">
-					To add the hamburger toggle functionality in mobile view, use the following code.
-					<div class="code-snippet last-snippet">
-						<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkart-c%2FCL-code-snippets%2Fblob%2Fmain%2Fhambur.js&style=vs2015&showCopy=on"></script>
-					</div>
+				<p class="pg-description pg-p">
+					This is the Javascript used to show the current value of the slider.
 				</p>
+				<div class="last-snipper code-snippet">
+					<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkart-c%2FCL-code-snippets%2Fblob%2Fmain%2Fsliderjs.js&style=vs2015&showCopy=on"></script>
+				</div>
 				<div class="main-footer">
-					<a href="../Modal/modal.html" class="previous-pg">
-						<i class="fas fa-arrow-left"></i> Modal
+					<a href="../Navigation/navigation.html" class="previous-pg">
+						<i class="fas fa-arrow-left"></i> Navigation
 					</a>
-					<a href="../Range Slider/range-slider.html" class="next-pg">
-						Range Slider
+					<a href="../Rating/rating.html" class="next-pg">
+						Rating
 						<i class="fas fa-arrow-right"></i>
 					</a>
 				</div>

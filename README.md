@@ -1,4 +1,4 @@
-# [Feather-UI](https://feather-ui.netlify.app)
+# [Feather-UI](https://feather-design.netlify.app/)
 
 Feather UI is a free-to-use, lightweight component library which can help you develop your website faster by using out predefined components.
 
